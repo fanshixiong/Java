@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=??????????Dao/Mapper???-->
+<mapper namespace="com.frans.dao.UserMapper">
+
+    <!--select??????-->
+    <select id="getUserList" resultType="Users">
+       select * from jdbc.users;
+   </select>
+
+    <select id="getUserById" resultType="Users">
+        select * from jdbc.users where id = #{id};
+    </select>
+
+    <insert id="addUsers" parameterType="Users">
+        insert into jdbc.users (id, name, password, address) values (#{id}, #{name}, #{password}, #{address});
+    </insert>
+
+    <update id="updateUser" parameterType="users1">
+        update jdbc.users set name=#{name}, password=#{password} where id = #{id};
+    </update>
+
+    <delete id="deleteUser" parameterType="users1">
+        delete from jdbc.users where id = #{id};
+    </delete>
+</mapper>

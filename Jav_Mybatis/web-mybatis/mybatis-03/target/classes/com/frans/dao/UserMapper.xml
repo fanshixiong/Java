@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=??????????Dao/Mapper???-->
+<mapper namespace="com.frans.dao.UserMapper">
+
+    <resultMap id="UserMap" type="Users">
+        <!--column??????е???Σ?property??????е?????-->
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="password" property="pwd"/>
+        <result column="address" property="address"/>
+    </resultMap>
+    <!--select??????-->
+    <select id="getUserList" resultType="Users">
+       select * from jdbc.users;
+   </select>
+
+    <select id="getUserById" resultMap="UserMap">
+        select * from jdbc.users where id = #{id};
+    </select>
+
+    <insert id="addUsers" parameterType="Users">
+        insert into jdbc.users (id, name, password, address) values (#{id}, #{name}, #{password}, #{address});
+    </insert>
+
+    <parameterMap id="UserMap" type="Users">
+        <parameter property="pwd" resultMap="UserMap"/>
+    </parameterMap>
+    <update id="updateUser" parameterMap="UserMap" parameterType="users1">
+        update jdbc.users set name=#{name}, password=#{password} where id = #{id};
+    </update>
+
+    <delete id="deleteUser" parameterType="users1">
+        delete from jdbc.users where id = #{id};
+    </delete>
+</mapper>
