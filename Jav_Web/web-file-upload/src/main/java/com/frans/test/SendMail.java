@@ -26,7 +26,7 @@ public class SendMail {
         Session session = Session.getDefaultInstance(prop, new Authenticator() {
             public PasswordAuthentication getPasswordAuthentication() {
                 //发件人邮件用户名、授权码
-                return new PasswordAuthentication("443605729@qq.com", "zrefjpiwfijfbida");
+                return new PasswordAuthentication("123@qq.com", "123");
             }
         });
 
@@ -38,7 +38,7 @@ public class SendMail {
         Transport ts = session.getTransport();
 
         //3、使用邮箱的用户名和授权码连上邮件服务器
-        ts.connect("smtp.qq.com", "443605729@qq.com", "zrefjpiwfijfbida");
+        ts.connect("smtp.qq.com", "123@qq.com", "123");
 
         //4、创建邮件
 
@@ -46,10 +46,10 @@ public class SendMail {
         MimeMessage message = new MimeMessage(session);
 
         //指明邮件的发件人
-        message.setFrom(new InternetAddress("443605729@qq.com"));
+        message.setFrom(new InternetAddress("123@qq.com"));
 
         //指明邮件的收件人，现在发件人和收件人是一样的，那就是自己给自己发
-        message.setRecipient(Message.RecipientType.TO, new InternetAddress("fsx443605729@163.com"));
+        message.setRecipient(Message.RecipientType.TO, new InternetAddress("123@163.com"));
 
         //邮件的标题
         message.setSubject("只包含文本的简单邮件");

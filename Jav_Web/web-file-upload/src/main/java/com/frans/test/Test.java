@@ -30,7 +30,7 @@ public class Test {
         Session session = Session.getDefaultInstance(prop, new Authenticator() {
             public PasswordAuthentication getPasswordAuthentication() {
                 //发件人邮件用户名、授权码
-                return new PasswordAuthentication("443605729@qq.com", "zrefjpiwfijfbida");
+                return new PasswordAuthentication("123@qq.com", "123");
             }
         });
 
@@ -42,7 +42,7 @@ public class Test {
         Transport ts = session.getTransport();
 
         //3、使用邮箱的用户名和授权码连上邮件服务器
-        ts.connect("smtp.qq.com", "443605729@qq.com", "zrefjpiwfijfbida");
+        ts.connect("smtp.qq.com", "123@qq.com", "123");
 
         //4、创建邮件
 
@@ -53,7 +53,7 @@ public class Test {
         //发件人
         message.setFrom(new InternetAddress("443605729@qq.com"));
         //收件人
-        message.setRecipient(Message.RecipientType.TO, new InternetAddress("fsx443605729@163.com"));
+        message.setRecipient(Message.RecipientType.TO, new InternetAddress("123@163.com"));
         //邮件标题
         message.setSubject("带图片的邮件");
 
