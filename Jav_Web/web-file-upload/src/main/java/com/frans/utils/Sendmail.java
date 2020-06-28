@@ -11,11 +11,11 @@ import java.util.Properties;
 public class Sendmail extends Thread {
 
     //用于给用户发送邮件的邮箱
-    private String from = "443605729@qq.com";
+    private String from = "123@qq.com";
     //邮箱的用户名
-    private String username = "443605729@qq.com";
+    private String username = "123@qq.com";
     //邮箱的密码
-    private String password = "zrefjpiwfijfbida";
+    private String password = "123";
     //发送邮件的服务器地址
     private String host = "smtp.qq.com";
 
@@ -43,7 +43,7 @@ public class Sendmail extends Thread {
             Session session = Session.getDefaultInstance(prop, new Authenticator() {
                 public PasswordAuthentication getPasswordAuthentication() {
                     //发件人邮件用户名、授权码
-                    return new PasswordAuthentication("443605729@qq.com", "zrefjpiwfijfbida");
+                    return new PasswordAuthentication("123@qq.com", "123");
                 }
             });
 
