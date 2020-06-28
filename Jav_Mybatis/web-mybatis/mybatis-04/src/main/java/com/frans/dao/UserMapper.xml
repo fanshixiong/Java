@@ -25,4 +25,9 @@
     <delete id="deleteUser" parameterType="users1">
         delete from jdbc.users where id = #{id};
     </delete>
+
+    <!--//·ÖÒ³-->
+    <select id="getUserByLimit" parameterType="map">
+        select * from jdbc.users limit #{startIndex}, #{pageSize}
+    </select>
 </mapper>

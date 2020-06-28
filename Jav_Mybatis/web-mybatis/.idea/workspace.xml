@@ -114,7 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserDaoTest.getUserById (1)">
+  <component name="RunManager" selected="JUnit.UserDaoTest.getUserByLimit">
     <configuration name="UserDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-04" />
       <extension name="coverage">
@@ -162,6 +162,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserDaoTest.getUserByLimit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frans" />
+      <option name="MAIN_CLASS_NAME" value="com.frans.UserDaoTest" />
+      <option name="METHOD_NAME" value="getUserByLimit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDaoTest.test (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-04" />
       <extension name="coverage">
@@ -178,29 +194,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-03" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frans.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frans" />
-      <option name="MAIN_CLASS_NAME" value="com.frans.UserDaoTest" />
-      <option name="METHOD_NAME" value="updateUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTest.getUserByLimit" />
         <item itemvalue="JUnit.UserDaoTest.getUserById (1)" />
         <item itemvalue="JUnit.UserDaoTest.addUser" />
         <item itemvalue="JUnit.UserDaoTest.test (2)" />
         <item itemvalue="JUnit.UserDaoTest" />
-        <item itemvalue="JUnit.UserDaoTest.updateUser" />
       </list>
     </recent_temporary>
   </component>

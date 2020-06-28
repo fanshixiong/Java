@@ -6,6 +6,7 @@ import com.frans.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.List;
 import org.apache.log4j.Logger;
 
@@ -74,4 +75,23 @@ public class UserDaoTest {
         sqlSession.commit();
         sqlSession.close();
     }
+
+    //limit分页
+    @Test
+    public void getUserByLimit(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
+        map.put("startIndex", 1);
+        map.put("pageSize", 2);
+
+        List<Users> userList =  mapper.getUserByLimit(map);
+        for (Users user : userList) {
+            System.out.println(user);
+        }
+
+        sqlSession.close();
+    }
+
 }
