@@ -84,7 +84,7 @@ public class UserDaoTest {
 
         HashMap<String, Integer> map = new HashMap<String, Integer>();
         map.put("startIndex", 1);
-        map.put("pageSize", 2);
+        map.put("pageSize", 5);
 
         List<Users> userList =  mapper.getUserByLimit(map);
         for (Users user : userList) {

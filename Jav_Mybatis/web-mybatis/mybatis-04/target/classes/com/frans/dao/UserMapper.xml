@@ -18,16 +18,16 @@
         insert into jdbc.users (id, name, password, address) values (#{id}, #{name}, #{password}, #{address});
     </insert>
 
-    <update id="updateUser" parameterType="users1">
+    <update id="updateUser" parameterType="Users">
         update jdbc.users set name=#{name}, password=#{password} where id = #{id};
     </update>
 
-    <delete id="deleteUser" parameterType="users1">
+    <delete id="deleteUser" parameterType="Users">
         delete from jdbc.users where id = #{id};
     </delete>
 
     <!--//???-->
-    <select id="getUserByLimit" parameterType="map">
-        select * from  jdbc.users limit #{startIndex},#{pageSize}
+    <select id="getUserByLimit" parameterType="map" resultType="Users">
+        select * from jdbc.users limit #{startIndex}, #{pageSize}
     </select>
 </mapper>
