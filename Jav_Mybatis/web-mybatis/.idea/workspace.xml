@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ac860f8-0a83-446e-9057-31455fd2f7d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/frans/dao/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/frans/dao/TeacherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/frans/pojo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/frans/pojo/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/frans/utils/MybatisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/com/frans/dao/StudentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/com/frans/dao/TeacherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/test/java/com/frans/test/TestOneto.java" afterDir="false" />
+    <list default="true" id="0ac860f8-0a83-446e-9057-31455fd2f7d6" name="Default Changelist" comment="MyBatis">
+      <change afterPath="$PROJECT_DIR$/mybatis-07/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/frans/dao/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/frans/dao/TeacherMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/frans/pojo/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/frans/pojo/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/frans/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/resources/com/frans/dao/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/resources/com/frans/dao/TeacherMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-07/src/test/java/com/frans/test/TestOneto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/frans/dao/BlogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/frans/pojo/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/frans/utils/IDUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/frans/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/com/frans/dao/BlogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/test/java/com/frans/test/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-09/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/697fa2f5-1b78-424f-b461-b9753ee79dfb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/697fa2f5-1b78-424f-b461-b9753ee79dfb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-04/log/frans.log" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/log/frans.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-04/src/main/java/com/frans/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/main/java/com/frans/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-04/src/test/java/com/frans/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/src/test/java/com/frans/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-04/target/classes/com/frans/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/target/classes/com/frans/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-04/target/test-classes/com/frans/UserDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-04/target/test-classes/com/frans/UserDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/main/java/com/frans/dao/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/frans/dao/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/main/resources/com/frans/dao/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/com/frans/dao/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/test/java/com/frans/test/TestOneto.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/test/java/com/frans/test/TestOneto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/target/classes/com/frans/dao/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/target/classes/com/frans/dao/StudentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/target/classes/com/frans/dao/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/target/classes/com/frans/dao/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/target/test-classes/com/frans/test/TestOneto.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/target/test-classes/com/frans/test/TestOneto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,14 +72,7 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="jdbc: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="student: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="jdbc: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="teacher: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="blog: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -90,6 +93,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -115,7 +119,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-06/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-08/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -125,8 +129,8 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="project.structure.side.proportion" value="0.18057142" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -140,16 +144,17 @@
       <recent name="com.frans.pojo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.frans.test" />
       <recent name="com.frans.utils" />
       <recent name="com.frans" />
       <recent name="frans" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-08\src\main\resources" />
+      <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-08\src\main\java\com" />
+      <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-07\src\main\resources" />
+      <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-07\src\main\java" />
       <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-06\src\main\resources" />
-      <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-05\src\main\resources" />
-      <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-05\src\main\java\com" />
-      <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-04\src\main\java\com" />
-      <recent name="F:\Java\Java_Study\Jav_Mybatis\web-mybatis\mybatis-04\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -164,9 +169,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestOneto.getStudent">
-    <configuration name="TestOneto.getStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-06" />
+  <component name="RunManager" selected="JUnit.All in mybatis-09">
+    <configuration name="All in mybatis-09" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-09" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.queryBlogChoose" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.frans.test.*" />
@@ -174,15 +187,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.frans.test" />
-      <option name="MAIN_CLASS_NAME" value="com.frans.test.TestOneto" />
-      <option name="METHOD_NAME" value="getStudent" />
+      <option name="MAIN_CLASS_NAME" value="com.frans.test.MyTest" />
+      <option name="METHOD_NAME" value="queryBlogChoose" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOneto.getTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-06" />
+    <configuration name="MyTest.queryBlogForeach" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.frans.test.*" />
@@ -190,56 +203,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.frans.test" />
-      <option name="MAIN_CLASS_NAME" value="com.frans.test.TestOneto" />
-      <option name="METHOD_NAME" value="getTeacher" />
+      <option name="MAIN_CLASS_NAME" value="com.frans.test.MyTest" />
+      <option name="METHOD_NAME" value="queryBlogForeach" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-05" />
+    <configuration name="MyTest.queryBlogIF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.frans.mapper.*" />
+          <option name="PATTERN" value="com.frans.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.frans.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.frans.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="addUser" />
+      <option name="PACKAGE_NAME" value="com.frans.test" />
+      <option name="MAIN_CLASS_NAME" value="com.frans.test.MyTest" />
+      <option name="METHOD_NAME" value="queryBlogIF" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.delUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-05" />
+    <configuration name="MyTest.updateBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.frans.mapper.*" />
+          <option name="PATTERN" value="com.frans.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.frans.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.frans.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="delUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMapperTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-05" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frans.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frans.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.frans.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="updateUser" />
+      <option name="PACKAGE_NAME" value="com.frans.test" />
+      <option name="MAIN_CLASS_NAME" value="com.frans.test.MyTest" />
+      <option name="METHOD_NAME" value="updateBlog" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -247,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestOneto.getStudent" />
-        <item itemvalue="JUnit.TestOneto.getTeacher" />
-        <item itemvalue="JUnit.UserMapperTest.delUser" />
-        <item itemvalue="JUnit.UserMapperTest.updateUser" />
-        <item itemvalue="JUnit.UserMapperTest.addUser" />
+        <item itemvalue="JUnit.All in mybatis-09" />
+        <item itemvalue="JUnit.MyTest.queryBlogForeach" />
+        <item itemvalue="JUnit.MyTest.updateBlog" />
+        <item itemvalue="JUnit.MyTest.queryBlogIF" />
+        <item itemvalue="JUnit.MyTest.queryBlogChoose" />
       </list>
     </recent_temporary>
   </component>
@@ -288,8 +285,17 @@
       <workItem from="1593227546603" duration="10490000" />
       <workItem from="1593257793831" duration="8132000" />
       <workItem from="1593327704851" duration="1039000" />
-      <workItem from="1593413493051" duration="2195000" />
+      <workItem from="1593413493051" duration="11191000" />
+      <workItem from="1593500078857" duration="4694000" />
     </task>
+    <task id="LOCAL-00001" summary="Mybatis">
+      <created>1593415847540</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593415847540</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +306,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -308,5 +316,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Mybatis" />
+    <MESSAGE value="MyBatis" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyBatis" />
   </component>
 </project>
