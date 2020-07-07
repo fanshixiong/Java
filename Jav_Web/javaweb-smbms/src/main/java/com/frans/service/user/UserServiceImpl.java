@@ -70,7 +70,7 @@ public class UserServiceImpl implements UserService{
 		}finally{
 			BaseDao.closeResource(connection, null, null);
 		}
-		
+		System.out.println(userCode + " " + userPassword);
 		//匹配密码
 		if(null != user){
 			if(!user.getUserPassword().equals(userPassword))

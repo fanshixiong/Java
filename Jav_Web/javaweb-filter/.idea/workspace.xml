@@ -6,7 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71e97fb1-8819-4463-8944-c12bccada338" name="Default Changelist" comment="" />
+    <list default="true" id="71e97fb1-8819-4463-8944-c12bccada338" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/main/java/com/frans/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/main/java/com/frans/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/main/java/com/frans/utils/IDUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/main/java/com/frans/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/main/resources/com/frans/dao/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-09/src/test/java/com/frans/test/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-06/src/main/resources/com/frans/dao/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-06/src/main/resources/com/frans/dao/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-07/src/main/resources/com/frans/dao/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-07/src/main/resources/com/frans/dao/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-07/src/main/resources/com/frans/dao/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/mybatis-07/src/main/resources/com/frans/dao/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Mybatis/web-mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +51,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -50,11 +69,18 @@
         <option name="userSettingsFile" value="H:\Maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1dOpbzbpVX34W9QhGJ392rOUpCV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -167,10 +193,22 @@
       <workItem from="1592306071653" duration="3851000" />
       <workItem from="1592486566458" duration="4573000" />
       <workItem from="1592526878331" duration="1527000" />
+      <workItem from="1594001954798" duration="150000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

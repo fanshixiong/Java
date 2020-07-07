@@ -6,7 +6,7 @@
 <mapper namespace="com.frans.dao.TeacherMapper">
     <select id="getTeachers" resultMap="TeacherStudent">
         select t.name as tname, t.id as tid, s.id as sid, s.name as sname
-        from student as s,teacher as t
+        from jdbc.student as s,teacher as t
         where s.tid = t.id and t.id = #{tid}
     </select>
 

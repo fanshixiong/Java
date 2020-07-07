@@ -33,7 +33,7 @@ public class BaseDao {
 		}
 		driver=params.getProperty("driver");
 		url=params.getProperty("url");
-		user=params.getProperty("user");
+		user=params.getProperty("username");
 		password=params.getProperty("password");
 
 	}   
@@ -47,6 +47,7 @@ public class BaseDao {
 		Connection connection = null;
 		try {
 			Class.forName(driver);
+			//System.out.println(url +" " + user + "  " + password);
 			connection = DriverManager.getConnection(url, user, password);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

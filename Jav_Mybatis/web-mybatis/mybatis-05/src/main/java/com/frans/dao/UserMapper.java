@@ -8,7 +8,8 @@ import java.util.Map;
 
 public interface UserMapper {
 
-    @Select("select * from users")
+    @Select("select * \n" +
+            "from users \t")
     List<Users> getUsers();
 
     @Select("select * from users where id = #{id}")

@@ -8,7 +8,7 @@
 
     <select id="getStudent2" resultMap="StudentTeacher2">
         select s.id as sid,s.name as sname, t.id as tid, t.name as tname
-        from student as s, teacher as t
+        from jdbc.student as s, teacher as t
         where s.tid = t.id;
     </select>
 

@@ -14,17 +14,17 @@
                     <div class="">
                         <label for="oldPassword">旧密码：</label>
                         <input type="password" name="oldpassword" id="oldpassword" value=""> 
-						<font color="red"></font>
+						<span style="color: red; "></span>
                     </div>
                     <div>
                         <label for="newPassword">新密码：</label>
                         <input type="password" name="newpassword" id="newpassword" value=""> 
-						<font color="red"></font>
+						<span style="color: red; "></span>
                     </div>
                     <div>
-                        <label for="reNewPassword">确认新密码：</label>
+                        <%--@declare id="renewpassword"--%><label for="reNewPassword">确认新密码：</label>
                         <input type="password" name="rnewpassword" id="rnewpassword" value=""> 
-						<font color="red"></font>
+						<span style="color: red; "></span>
                     </div>
                     <div class="providerAddBtn">
                         <!--<a href="#">保存</a>-->
