@@ -5,4 +5,29 @@
 
 <mapper namespace="com.frans.dao.user.UserMapper">
 
+    <select id="getUserCount" resultType="Integer">
+        select count(1) as count
+        from smbms_user as u, smbms_role as r
+        where u.userRole = r.id
+        <if test="userName != null">
+            and u.userName like #{userName}
+        </if>
+        <if test="userRole > 0">
+            and userRole = #{userRole}
+        </if>
+    </select>
+
+    <select id="getUserList" resultType="User">
+        select u.*, r.roleName as userRoleName
+        from smbms_user u, smbms_role r
+        where u.userRole = r.id
+        <if test="userName.length() != 0">
+            and u.userName like CONCAT('%',#{userName},'%')
+        </if>
+        <if test="userRole > 0">
+            and u.userRole = #{userRole}
+        </if>
+        order by creationDate DESC limit #{currentPageNo}, #{pageSize}
+    </select>
+
 </mapper>

@@ -3,7 +3,6 @@ package com.frans.dao.user;
 import com.frans.pojo.User;
 import org.apache.ibatis.annotations.*;
 
-import java.sql.Connection;
 import java.util.List;
 
 public interface UserMapper {
@@ -25,7 +24,7 @@ public interface UserMapper {
      * @return
      * @throws Exception
      */
-    @Select("select * from smbms_user where userCode = #{userCode}")
+    @Select("select * from smbms.smbms_user where userCode = #{userCode}")
     public User getLoginUser(@Param("userCode") String userCode)throws Exception;
 
     /**

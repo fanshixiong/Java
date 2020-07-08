@@ -4,9 +4,9 @@ import com.alibaba.fastjson.JSONArray;
 import com.frans.pojo.Role;
 import com.frans.pojo.User;
 import com.frans.service.role.RoleService;
-import com.frans.service.role.RoleServiceImpl;
+import com.frans.service.role.RoleServiceImple;
 import com.frans.service.user.UserService;
-import com.frans.service.user.UserServiceImpl;
+import com.frans.service.user.UserServiceImple;
 import com.frans.tools.Constants;
 import com.frans.tools.PageSupport;
 import com.mysql.cj.util.StringUtils;
@@ -79,7 +79,8 @@ public class UserServlet extends HttpServlet {
 		String newpassword = request.getParameter("newpassword");
 		boolean flag = false;
 		if(o != null && !StringUtils.isNullOrEmpty(newpassword)){
-			UserService userService = new UserServiceImpl();
+			//UserService userService = new UserServiceImpl();
+			UserService userService = new UserServiceImple();
 			flag = userService.updatePwd(((User)o).getId(),newpassword);
 			if(flag){
 				request.setAttribute(Constants.SYS_MESSAGE, "修改密码成功,请退出并使用新密码重新登录！");
@@ -146,7 +147,8 @@ public class UserServlet extends HttpServlet {
 		user.setModifyBy(((User)request.getSession().getAttribute(Constants.USER_SESSION)).getId());
 		user.setModifyDate(new Date());
 		
-		UserService userService = new UserServiceImpl();
+		//UserService userService = new UserServiceImpl();
+		UserService userService = new UserServiceImple();
 		if(userService.modify(user)){
 			response.sendRedirect(request.getContextPath()+"/jsp/user.do?method=query");
 		}else{
@@ -160,7 +162,8 @@ public class UserServlet extends HttpServlet {
 		String id = request.getParameter("uid");
 		if(!StringUtils.isNullOrEmpty(id)){
 			//调用后台方法得到user对象
-			UserService userService = new UserServiceImpl();
+			//UserService userService = new UserServiceImpl();
+			UserService userService = new UserServiceImple();
 			User user = userService.getUserById(id);
 			request.setAttribute("user", user);
 			request.getRequestDispatcher(url).forward(request, response);
@@ -182,7 +185,8 @@ public class UserServlet extends HttpServlet {
 		if(delId <= 0){
 			resultMap.put("delResult", "notexist");
 		}else{
-			UserService userService = new UserServiceImpl();
+			//UserService userService = new UserServiceImpl();
+			UserService userService = new UserServiceImple();
 			if(userService.deleteUserById(delId)){
 				resultMap.put("delResult", "true");
 			}else{
@@ -209,7 +213,8 @@ public class UserServlet extends HttpServlet {
 			//userCode == null || userCode.equals("")
 			resultMap.put("userCode", "exist");
 		}else{
-			UserService userService = new UserServiceImpl();
+			//UserService userService = new UserServiceImpl();
+			UserService userService = new UserServiceImple();
 			User user = userService.selectUserCodeExist(userCode);
 			if(null != user){
 				resultMap.put("userCode","exist");
@@ -232,7 +237,7 @@ public class UserServlet extends HttpServlet {
 	private void getRoleList(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		List<Role> roleList = null;
-		RoleService roleService = new RoleServiceImpl();
+		RoleService roleService = new RoleServiceImple();
 		roleList = roleService.getRoleList();
 		//把roleList转换成json对象输出
 		response.setContentType("application/json");
@@ -249,7 +254,8 @@ public class UserServlet extends HttpServlet {
 		String temp = request.getParameter("queryUserRole");
 		String pageIndex = request.getParameter("pageIndex");
 		int queryUserRole = 0;
-		UserService userService = new UserServiceImpl();
+		//UserService userService = new UserServiceImpl();
+		UserService userService = new UserServiceImple();
 		List<User> userList = null;
 		//设置页面容量
     	int pageSize = Constants.pageSize;
@@ -299,7 +305,7 @@ public class UserServlet extends HttpServlet {
 		userList = userService.getUserList(queryUserName,queryUserRole,currentPageNo, pageSize);
 		request.setAttribute("userList", userList);
 		List<Role> roleList = null;
-		RoleService roleService = new RoleServiceImpl();
+		RoleService roleService = new RoleServiceImple();
 		roleList = roleService.getRoleList();
 		request.setAttribute("roleList", roleList);
 		request.setAttribute("queryUserName", queryUserName);
@@ -339,7 +345,8 @@ public class UserServlet extends HttpServlet {
 		user.setCreationDate(new Date());
 		user.setCreatedBy(((User)request.getSession().getAttribute(Constants.USER_SESSION)).getId());
 		
-		UserService userService = new UserServiceImpl();
+		//UserService userService = new UserServiceImpl();
+		UserService userService = new UserServiceImple();
 		if(userService.add(user)){
 			response.sendRedirect(request.getContextPath()+"/jsp/user.do?method=query");
 		}else{

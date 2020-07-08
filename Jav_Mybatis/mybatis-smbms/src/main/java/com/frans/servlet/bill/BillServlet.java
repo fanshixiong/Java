@@ -5,9 +5,9 @@ import com.frans.pojo.Bill;
 import com.frans.pojo.Provider;
 import com.frans.pojo.User;
 import com.frans.service.bill.BillService;
-import com.frans.service.bill.BillServiceImpl;
+import com.frans.service.bill.BillServiceImple;
 import com.frans.service.provider.ProviderService;
-import com.frans.service.provider.ProviderServiceImpl;
+import com.frans.service.provider.ProviderServiceImple;
 import com.frans.tools.Constants;
 import com.mysql.cj.util.StringUtils;
 
@@ -95,7 +95,8 @@ public class BillServlet extends HttpServlet {
 		System.out.println("getproviderlist ========================= ");
 		
 		List<Provider> providerList = new ArrayList<Provider>();
-		ProviderService providerService = new ProviderServiceImpl();
+		//ProviderService providerService = 	new ProviderServiceImpl();
+		ProviderService providerService = 	new ProviderServiceImple();
 		providerList = providerService.getProviderList("","");
 		//把providerList转换成json对象输出
 		response.setContentType("application/json");
@@ -108,7 +109,8 @@ public class BillServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String id = request.getParameter("billid");
 		if(!StringUtils.isNullOrEmpty(id)){
-			BillService billService = new BillServiceImpl();
+			//BillService billService = new BillServiceImpl();
+			BillService billService = new BillServiceImple();
 			Bill bill = null;
 			bill = billService.getBillById(id);
 			request.setAttribute("bill", bill);
@@ -141,7 +143,8 @@ public class BillServlet extends HttpServlet {
 		bill.setModifyBy(((User)request.getSession().getAttribute(Constants.USER_SESSION)).getId());
 		bill.setModifyDate(new Date());
 		boolean flag = false;
-		BillService billService = new BillServiceImpl();
+		//BillService billService = new BillServiceImpl();
+		BillService billService = new BillServiceImple();
 		flag = billService.modify(bill);
 		if(flag){
 			response.sendRedirect(request.getContextPath()+"/jsp/bill.do?method=query");
@@ -154,7 +157,8 @@ public class BillServlet extends HttpServlet {
 		String id = request.getParameter("billid");
 		HashMap<String, String> resultMap = new HashMap<String, String>();
 		if(!StringUtils.isNullOrEmpty(id)){
-			BillService billService = new BillServiceImpl();
+			//BillService billService = new BillServiceImpl();
+			BillService billService = new BillServiceImple();
 			boolean flag = billService.deleteBillById(id);
 			if(flag){//删除成功
 				resultMap.put("delResult", "true");
@@ -195,7 +199,8 @@ public class BillServlet extends HttpServlet {
 		bill.setCreatedBy(((User)request.getSession().getAttribute(Constants.USER_SESSION)).getId());
 		bill.setCreationDate(new Date());
 		boolean flag = false;
-		BillService billService = new BillServiceImpl();
+		//BillService billService = new BillServiceImpl();
+		BillService billService = new BillServiceImple();
 		flag = billService.add(bill);
 		System.out.println("add flag -- > " + flag);
 		if(flag){
@@ -208,7 +213,9 @@ public class BillServlet extends HttpServlet {
 			throws ServletException, IOException {
 		
 		List<Provider> providerList = new ArrayList<Provider>();
-		ProviderService providerService = new ProviderServiceImpl();
+		//ProviderService providerService = new ProviderServiceImpl();
+		ProviderService providerService = 	new ProviderServiceImple();
+
 		providerList = providerService.getProviderList("","");
 		request.setAttribute("providerList", providerList);
 		
@@ -220,7 +227,8 @@ public class BillServlet extends HttpServlet {
 		}
 		
 		List<Bill> billList = new ArrayList<Bill>();
-		BillService billService = new BillServiceImpl();
+		//BillService billService = new BillServiceImpl();
+		BillService billService = new BillServiceImple();
 		Bill bill = new Bill();
 		if(StringUtils.isNullOrEmpty(queryIsPayment)){
 			bill.setIsPayment(0);

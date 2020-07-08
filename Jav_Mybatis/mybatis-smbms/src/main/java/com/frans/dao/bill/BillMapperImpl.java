@@ -3,6 +3,7 @@ package com.frans.dao.bill;
 import com.frans.pojo.Bill;
 import com.frans.tools.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
+import org.junit.Test;
 
 import java.util.List;
 
@@ -26,6 +27,18 @@ public class BillMapperImpl implements BillMapper{
         return billList;
     }
 
+    @Test
+    public void getBill() throws Exception {
+        Bill billById = getBillById("2");
+        billById.setProviderId(0);
+        billById.setProductName(null);
+        billById.setIsPayment(0);
+        List<Bill> billList = getBillList(billById);
+        for (Bill bill : billList) {
+            System.out.println(bill);
+        }
+    }
+
     @Override
     public int deleteBillById(String delId) throws Exception {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
@@ -44,6 +57,7 @@ public class BillMapperImpl implements BillMapper{
         sqlSession.close();
         return billById;
     }
+
 
     @Override
     public int modify(Bill bill) throws Exception {

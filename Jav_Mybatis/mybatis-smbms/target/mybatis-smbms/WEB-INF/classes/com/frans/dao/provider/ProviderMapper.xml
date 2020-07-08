@@ -5,4 +5,15 @@
 
 <mapper namespace="com.frans.dao.provider.ProviderMapper">
 
+    <select id="getProviderList" resultType="Provider">
+        select *
+        from smbms_provider
+        where 1=1
+        <if test="proName != null">
+            and proName like concat('%', #{proName}, '%')
+        </if>
+        <if test="proCode != null">
+            and proCode like concat('%', #{proCode}, '%')
+        </if>
+    </select>
 </mapper>

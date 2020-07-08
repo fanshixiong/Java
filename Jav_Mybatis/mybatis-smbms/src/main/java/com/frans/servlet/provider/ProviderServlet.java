@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.frans.pojo.Provider;
 import com.frans.pojo.User;
 import com.frans.service.provider.ProviderService;
-import com.frans.service.provider.ProviderServiceImpl;
+import com.frans.service.provider.ProviderServiceImple;
 import com.frans.tools.Constants;
 import com.mysql.cj.util.StringUtils;
 
@@ -77,7 +77,9 @@ public class ProviderServlet extends HttpServlet {
 		String id = request.getParameter("proid");
 		HashMap<String, String> resultMap = new HashMap<String, String>();
 		if(!StringUtils.isNullOrEmpty(id)){
-			ProviderService providerService = new ProviderServiceImpl();
+//			ProviderService providerService = new ProviderServiceImpl();
+			ProviderService providerService = 	new ProviderServiceImple();
+
 			int flag = providerService.deleteProviderById(id);
 			if(flag == 0){//删除成功
 				resultMap.put("delResult", "true");
@@ -115,7 +117,9 @@ public class ProviderServlet extends HttpServlet {
 		provider.setModifyBy(((User)request.getSession().getAttribute(Constants.USER_SESSION)).getId());
 		provider.setModifyDate(new Date());
 		boolean flag = false;
-		ProviderService providerService = new ProviderServiceImpl();
+//		ProviderService providerService = new ProviderServiceImpl();
+		ProviderService providerService = 	new ProviderServiceImple();
+
 		flag = providerService.modify(provider);
 		if(flag){
 			response.sendRedirect(request.getContextPath()+"/jsp/provider.do?method=query");
@@ -128,7 +132,9 @@ public class ProviderServlet extends HttpServlet {
 			throws ServletException, IOException {
 		String id = request.getParameter("proid");
 		if(!StringUtils.isNullOrEmpty(id)){
-			ProviderService providerService = new ProviderServiceImpl();
+//			ProviderService providerService = new ProviderServiceImpl();
+			ProviderService providerService = 	new ProviderServiceImple();
+
 			Provider provider = null;
 			provider = providerService.getProviderById(id);
 			request.setAttribute("provider", provider);
@@ -156,7 +162,9 @@ public class ProviderServlet extends HttpServlet {
 		provider.setCreatedBy(((User)request.getSession().getAttribute(Constants.USER_SESSION)).getId());
 		provider.setCreationDate(new Date());
 		boolean flag = false;
-		ProviderService providerService = new ProviderServiceImpl();
+//		ProviderService providerService = new ProviderServiceImpl();
+		ProviderService providerService = 	new ProviderServiceImple();
+
 		flag = providerService.add(provider);
 		if(flag){
 			response.sendRedirect(request.getContextPath()+"/jsp/provider.do?method=query");
@@ -176,7 +184,9 @@ public class ProviderServlet extends HttpServlet {
 			queryProCode = "";
 		}
 		List<Provider> providerList = new ArrayList<Provider>();
-		ProviderService providerService = new ProviderServiceImpl();
+//		ProviderService providerService = new ProviderServiceImpl();
+		ProviderService providerService = 	new ProviderServiceImple();
+
 		providerList = providerService.getProviderList(queryProName,queryProCode);
 		request.setAttribute("providerList", providerList);
 		request.setAttribute("queryProName", queryProName);

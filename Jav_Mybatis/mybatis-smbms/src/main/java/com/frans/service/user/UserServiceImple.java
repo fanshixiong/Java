@@ -21,7 +21,6 @@ public class UserServiceImple implements UserService{
     }
     @Override
     public boolean add(User user) {
-        MybatisUtils
         boolean flag = false;
         try{
             int add = userMapper.add(user);
@@ -39,41 +38,104 @@ public class UserServiceImple implements UserService{
 
     @Override
     public User login(String userCode, String userPassword) {
-        return null;
+        User user = null;
+        try {
+            user = userMapper.getLoginUser(userCode);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if(null != user){
+            if(!user.getUserPassword().equals(userPassword)){
+                user = null;
+            }
+        }
+        return user;
     }
 
     @Override
     public List<User> getUserList(String queryUserName, int queryUserRole, int currentPageNo, int pageSize) {
-        return null;
+        List<User> userList = null;
+        System.out.println("queryUserName ---- > " + queryUserName);
+        System.out.println("queryUserRole ---- > " + queryUserRole);
+        System.out.println("currentPageNo ---- > " + currentPageNo);
+        System.out.println("pageSize ---- > " + pageSize);
+        try {
+            userList = userMapper.getUserList(queryUserName,queryUserRole,currentPageNo,pageSize);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return userList;
     }
 
     @Override
     public int getUserCount(String queryUserName, int queryUserRole) {
-        return 0;
+        int count = 0;
+        System.out.println("queryUserName ---- > " + queryUserName);
+        System.out.println("queryUserRole ---- > " + queryUserRole);
+        try {
+            count = userMapper.getUserCount(queryUserName,queryUserRole);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return count;
     }
 
     @Override
     public User selectUserCodeExist(String userCode) {
-        return null;
+        User user = null;
+        try {
+            user = userMapper.getLoginUser( userCode);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return user;
     }
 
     @Override
     public boolean deleteUserById(Integer delId) {
-        return false;
+        boolean flag = false;
+        try {
+            if(userMapper.deleteUserById(delId) > 0)
+                flag = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return flag;
     }
 
     @Override
     public User getUserById(String id) {
-        return null;
+        User user = null;
+        try{
+            user = userMapper.getUserById(id);
+        }catch (Exception e) {
+            e.printStackTrace();
+            user = null;
+        }
+        return user;
     }
 
     @Override
     public boolean modify(User user) {
-        return false;
+        boolean flag = false;
+        try {
+            if(userMapper.modify(user) > 0)
+                flag = true;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return flag;
     }
 
     @Override
     public boolean updatePwd(int id, String pwd) {
-        return false;
+        boolean flag = false;
+        try{
+            if(userMapper.updatePwd(id,pwd) > 0)
+                flag = true;
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        return flag;
     }
 }

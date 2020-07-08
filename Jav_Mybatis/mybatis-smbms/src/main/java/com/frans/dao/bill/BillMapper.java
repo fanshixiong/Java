@@ -44,9 +44,6 @@ public interface BillMapper {
      * @return
      * @throws Exception
      */
-    @Select("select b.*, p.proName as providerName\n" +
-            "        from smbms_bill b, smbms_provider p\n" +
-            "        where b.providerId = p.id and b.id= #{id};")
     public Bill getBillById(@Param("id") String id)throws Exception;
 
     /**

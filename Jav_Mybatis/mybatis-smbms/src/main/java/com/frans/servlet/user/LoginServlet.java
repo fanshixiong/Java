@@ -1,8 +1,7 @@
 package com.frans.servlet.user;
 
 import com.frans.pojo.User;
-import com.frans.service.user.UserService;
-import com.frans.service.user.UserServiceImpl;
+import com.frans.service.user.UserServiceImple;
 import com.frans.tools.Constants;
 
 import javax.servlet.ServletException;
@@ -27,7 +26,8 @@ public class LoginServlet extends HttpServlet {
 		String userCode = request.getParameter("userCode");
 		String userPassword = request.getParameter("userPassword");
 		//调用service方法，进行用户匹配
-		UserService userService = new UserServiceImpl();
+		//UserService userService = new UserServiceImpl();
+		UserServiceImple userService = new UserServiceImple();
 		User user = userService.login(userCode,userPassword);
 		if(null != user){//登录成功
 			//放入session
