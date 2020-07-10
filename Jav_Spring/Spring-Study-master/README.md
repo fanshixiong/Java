@@ -1,8 +1,8 @@
 # Spring-Study
-[Kuang shen Spring study in bilibili](https://www.bilibili.com/video/BV1WE411d7Dv?p=1)
 
+## 1. Spring
 
-## 1. 简介
+### 1.1 简介
 
 spring理念：是现有的技术更加容易使用，本身是一个大杂烩。
 
@@ -24,7 +24,7 @@ GitHub： https://github.com/spring-projects/spring-framework
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-webmvc</artifactId>
-    <version>5.2.5.RELEASE</version>
+    <version>5.2.7.RELEASE</version>
 </dependency>
 
 <dependency>
@@ -43,16 +43,47 @@ GitHub： https://github.com/spring-projects/spring-framework
 
 总结：spring是一个轻量级的控制反转(IOC)和面向切面编程(AOP)的框架。
 
+### 1.2 组成
 
+![在这里插入图片描述](F:\Java\Java_Study\Jav_Spring\Spring-Study-master\README.assets\20200628180016435.png)
+
+* **核心容器**：核心容器提供 Spring 框架的基本功能。核心容器的主要组件是 BeanFactory，它是工厂模式的实现。BeanFactory 使用控制反转（IOC） 模式将应用程序的配置和依赖性规范与实际的应用程序代码分开。
+  Spring 上下文：Spring 上下文是一个配置文件，向 Spring 框架提供上下文信息。Spring 上下文包括企业服务，例如 JNDI、EJB、电子邮件、国际化、校验和调度功能。
+* **Spring AOP**：通过配置管理特性，Spring AOP 模块直接将面向切面的编程功能 , 集成到了 Spring 框架中。所以，可以很容易地使 Spring 框架管理任何支持 AOP的对象。Spring AOP 模块为基于 Spring 的应用程序中的对象提供了事务管理服务。通过使用 Spring AOP，不用依赖组件，就可以将声明性事务管理集成到应用。
+* **Spring DAO**：JDBC DAO 抽象层提供了有意义的异常层次结构，可用该结构来管理异常处理和不同数据库供应商抛出的错误消息。异常层次结构简化了错误处理，并且极大地降低了需要编写的异常代码数量（例如打开和关闭连接）。Spring DAO 的面向 JDBC 的异常遵从通用的 DAO 异常层次结构。
+* **Spring ORM**：Spring 框架插入了若干个 ORM 框架，从而提供了 ORM 的对象关系工具，其中包括 JDO、Hibernate 和 iBatis SQL Map。所有这些都遵从 Spring 的通用事务和 DAO 异常层次结构。
+* **Spring Web 模块**：Web 上下文模块建立在应用程序上下文模块之上，为基于 Web 的应用程序提供了上下文。所以，Spring 框架支持与 Jakarta Struts 的集成。Web 模块还简化了处理多部分请求以及将请求参数绑定到域对象的工作。
+* **Spring MVC 框架**：MVC 框架是一个全功能的构建 Web 应用程序的 MVC 实现。通过策略接口，MVC 框架变成为高度可配置的，MVC 容纳了大量视图技术，其中包括 JSP、Velocity、Tiles、iText 和 POI。
+
+![在这里插入图片描述](F:\Java\Java_Study\Jav_Spring\Spring-Study-master\README.assets\20200628180025728.png)
+
+### 1.3 拓展
+
+![在这里插入图片描述](F:\Java\Java_Study\Jav_Spring\Spring-Study-master\README.assets\20200628180035980.png)
+
+- Spring Boot
+  - 一个快速开发的脚手架
+  - 基于SpringBoot可以快速的开发单个微服务
+- Spring Cloud
+  - Spring Cloud是基于SpringBoot实现的
+
+
+
+**Spring Boot与Spring Cloud**
+
+-   Spring Boot 是 Spring 的一套快速配置脚手架，可以基于Spring Boot 快速开发单个微服务;
+-   Spring Cloud是基于Spring Boot实现的；
+-   Spring Boot专注于快速、方便集成的单个微服务个体，Spring Cloud关注全局的服务治理框架；
+-   Spring Boot使用了约束优于配置的理念，很多集成方案已经帮你选择好了，能不配置就不配置 , Spring Cloud很大的一部分是基于Spring Boot来实现，Spring Boot可以离开Spring Cloud独立使用开发项目，但是Spring Cloud离不开Spring Boot，属于依赖的关系。
+-   SpringBoot在SpringClound中起到了承上启下的作用，如果你要学习SpringCloud必须要学习SpringBoot。
 
 ## 2.IOC理论
 
+### 2.1 理论推导
+
 1. UserDao
-
 2. UserDaoImp
-
 3. UserSevice
-
 4. UserServiceImp
 
 在之前，用户的需求可能会影响原来的代码。
@@ -66,17 +97,28 @@ public void setUserDao(UserDao userDao){
 ```
 
 - 之前是主动创建对象，控制权在程序员手上。
-
 - 使用set之后，是被动接受对象。
 
+![img](F:\Java\Java_Study\Jav_Spring\Spring-Study-master\README.assets\20200608095331772.png)
 
+### 2.3 本质
+
+​		**控制反转IoC**(Inversion of Control)，是一种设计思想，**DI(依赖注入)**是实现IoC的一种方法，也有人认为DI只是IoC的另一种说法。没有IoC的程序中 , 我们使用面向对象编程 , 对象的创建与对象间的依赖关系完全硬编码在程序中，对象的创建由程序自己控制，控制反转后将对象的创建转移给第三方，个人认为所谓控制反转就是：**获得依赖对象的方式反转了。**
+
+![在这里插入图片描述](F:\Java\Java_Study\Jav_Spring\Spring-Study-master\README.assets\20200628180055895.png)
+
+
+
+​		采用XML方式配置Bean的时候，Bean的定义信息是和实现分离的，而采用注解的方式可以把两者合为一体，Bean的定义信息直接以注解的形式定义在实现类中，从而达到了零配置的目的。
+
+​		**控制反转是一种通过描述（XML或注解）并通过第三方去生产或获取特定对象的方式。在Spring中实现控制反转的是IoC容器，其实现方法是依赖注入（Dependency Injection,DI）。**
 
 ## 3. Hello Spring
 
 pojo中
 
 ```java
-package com.hou.pojo;
+package com.frans.pojo;
 
 public class Hello {
 
@@ -113,7 +155,7 @@ resource种
     <!--class = new的对象-->
     <!--property 相当于给对象中的属性设值-->
     
-    <bean id="hello" class="com.hou.pojo.Hello">
+    <bean id="hello" class="com.frans.pojo.Hello">
         <property name="name" value="Spring"/>
     </bean>
 </beans>
@@ -122,7 +164,7 @@ resource种
 test
 
 ```java
-import com.hou.pojo.Hello;
+import com.frans.pojo.Hello;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -154,9 +196,9 @@ property 相当于给对象中的属性设值
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userdaomysql" class="com.hou.dao.UserDaoMysqlImpl"></bean>
+    <bean id="userdaomysql" class="com.frans.dao.UserDaoMysqlImpl"></bean>
 
-    <bean id="userServiceImpl" class="com.hou.service.UserServiceImp">
+    <bean id="userServiceImpl" class="com.frans.service.UserServiceImp">
         <!--ref引用spring中已经创建很好的对象-->
         <!--value是一个具体的值-->
         <property name="userDao" ref="userdaomysql"/>
@@ -172,7 +214,7 @@ property 相当于给对象中的属性设值
 1. 使用无参构造创建对象，默认。
 2. 使用有参构造
 
-下标赋值
+### 4.1 下标赋值
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -181,25 +223,27 @@ property 相当于给对象中的属性设值
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.hou.pojo.User">
-        <constructor-arg index="0" value="hou"/>
+    <bean id="user" class="com.frans.pojo.User">
+        <constructor-arg index="0" value="frans"/>
     </bean>
 </beans>
 ```
 
-类型赋值（不建议使用）
+>不是通过`set`注入。
+
+### 4.2类型赋值（不建议使用）
 
 ```xml
-<bean id="user" class="com.hou.pojo.User">
+<bean id="user" class="com.frans.pojo.User">
     <constructor-arg type="java.lang.String" value="dong"/>
 </bean>
 ```
 
-直接通过参数名
+### 4.3直接通过参数名
 
 ```xml
-<bean id="user" class="com.hou.pojo.User">
-    <constructor-arg name="name" value="hou"></constructor-arg>
+<bean id="user" class="com.frans.pojo.User">
+    <constructor-arg name="name" value="frans"></constructor-arg>
 </bean>
 ```
 
@@ -211,11 +255,11 @@ Spring类似于婚介网站！
 
 ## 5. Spring配置
 
-**别名**
+### 5.1 别名
 
 ```xml
-<bean id="user" class="com.hou.pojo.User">
-    <constructor-arg name="name" value="hou"></constructor-arg>
+<bean id="user" class="com.frans.pojo.User">
+    <constructor-arg name="name" value="frans"></constructor-arg>
 </bean>
 
 <alias name="user" alias="user2aaa"/>
@@ -223,7 +267,7 @@ Spring类似于婚介网站！
 
 
 
-**Bean的配置**
+### 5.2  **Bean的配置**
 
 - id：bean的id标识符
 - class：bean对象所对应的类型
@@ -231,7 +275,7 @@ Spring类似于婚介网站！
 
 
 
-**import**
+### 5.3  **import**
 
 一般用于团队开发，它可以将多个配置文件，导入合并为一个
 
@@ -243,9 +287,9 @@ Spring类似于婚介网站！
 
 ## 6. DI依赖注入
 
-**构造器注入**
+### 6.1  **构造器注入**
 
-**set方式注入**（重点）
+### 6.2 **set方式注入**（重点）
 
 - 依赖：bean对象的创建依赖于容器
 - 注入：bean对象中的所有属性，由容器来注入
@@ -323,7 +367,7 @@ public class Address {
     </bean>
 
     <bean id="student" class="com.pojo.Student">
-        <property name="name" value="hou"/>
+        <property name="name" value="frans"/>
         <property name="address" ref="address"/>
 
         <!--数组注入-->
@@ -560,11 +604,11 @@ public class People {
     <bean id="dog" class="com.pojo.Dog"/>
     <!--byname会自动查找，和自己对象set对应的值对应的id-->
     <!--<bean id="people" class="com.pojo.People" autowire="byName">-->
-        <!--<property name="name" value="hou"></property>-->
+        <!--<property name="name" value="frans"></property>-->
     <!--</bean>-->
     <!--byType会自动查找，和自己对象属性相同的bean-->
     <bean id="people" class="com.pojo.People" autowire="byType">
-        <property name="name" value="hou"></property>
+        <property name="name" value="frans"></property>
     </bean>
 
 </beans>
@@ -833,14 +877,14 @@ public class ProxyInvocation implements InvocationHandler {
 
     //处理代理实例，并返回结果
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        seeHouse();
+        seefransse();
         Object result = method.invoke(rent, args);
         fare();
         return result;
     }
 
-    public void seeHouse(){
-        System.out.println("see house");
+    public void seefransse(){
+        System.out.println("see fransse");
     }
 
     public void fare(){
@@ -1094,7 +1138,7 @@ public class Annotation {
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>spring-study</artifactId>
-        <groupId>com.hou</groupId>
+        <groupId>com.frans</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
