@@ -419,7 +419,7 @@ public class Address {
 </beans>
 ```
 
-**第三方**
+### 6.3 **拓展方式注入**
 
 p标签和c标签
 
@@ -485,9 +485,9 @@ public class User {
 
 
 
-**bean的作用域**
+### 6.4 **bean的作用域**
 
-![1586093707060](C:\Users\QHQ\AppData\Roaming\Typora\typora-user-images\1586093707060.png)
+![img](F:\Java\Java_Study\Jav_Spring\Spring-Study-master\README.assets\640)
 
 1. 单例模式（默认）
 
@@ -509,7 +509,8 @@ public class User {
 
 - 自动装配是Spring是满足bean依赖的一种方式
 - Spring会在上下文自动寻找，并自动给bean装配属性
-- 
+
+
 
 在Spring中有三种装配的方式
 
@@ -518,6 +519,8 @@ public class User {
 3. 隐式的自动装配bean 【重要】
 
 
+
+### 7.1 **自动装配**
 
 1. 环境搭建：一个人有两个宠物
 
@@ -616,11 +619,11 @@ public class People {
 
 
 
-**使用注解自动装配**
+### 7.2  **使用注解自动装配**
 
 jdk1.5支持的注解，spring2.5支持的注解
 
- The introduction of annotation-based configuration raised the question of whether this approach is “better” than XML. 
+>   The introduction of annotation-based configuration raised the question of whether this approach is “better” than XML. 
 
 导入context约束
 
@@ -763,10 +766,10 @@ xml与注解
 - xml更加万能，维护简单
 - 注解，不是自己的类，使用不了，维护复杂
 
-最佳实践：
-
-- xml用来管理bean
-- 注解只用来完成属性的注入
+>   最佳实践：
+>
+>   *   xml用来管理bean
+>   *   注解只用来完成属性的注入
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -780,6 +783,7 @@ xml与注解
 
     <context:annotation-config/>
     <!--指定要扫描的包-->
+    <!--开启注解支持-->
     <context:component-scan base-package="com.pojo"/>
 
 </beans>
@@ -808,7 +812,8 @@ public class MyConfig {
 ```
 
 ```java
-@Component
+//@Component
+// Component注解加不加都可以，因为Bean已经在Config中注册了
 public class User {
 
     @Value("dong")

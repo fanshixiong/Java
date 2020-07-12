@@ -27,7 +27,7 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
-                ", address=" + address +
+                ", address=" + address.toString() +
                 ", books=" + Arrays.toString(books) +
                 ", hobbies=" + hobbies +
                 ", card=" + card +

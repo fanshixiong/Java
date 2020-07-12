@@ -1,23 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="GBK"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="address" class="com.frans.pojo.Address">
-        <property name="address" value="nj"></property>
+        <property name="address" value="nj"/>
     </bean>
 
     <bean id="student" class="com.frans.pojo.Student">
         <property name="name" value="frans"/>
         <property name="address" ref="address"/>
 
-        <!--数组注入-->
+        <!--list-->
         <property name="books">
             <array>
-                <value>三国</value>
-                <value>西游</value>
-                <value>水浒</value>
+                <value>????</value>
+                <value>????</value>
+                <value>??</value>
             </array>
         </property>
 
@@ -57,5 +59,11 @@
             </props>
         </property>
     </bean>
+
+    <!--p??????????/set???-->
+    <bean id="user" class="com.frans.pojo.User" p:name="dong" p:age="10"/>
+
+    <!--c???????/??????-->
+    <bean id="user2" class="com.frans.pojo.User" c:name="kun" c:age="19"></bean>
 
 </beans>

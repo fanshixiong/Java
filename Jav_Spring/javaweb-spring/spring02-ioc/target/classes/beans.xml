@@ -12,15 +12,17 @@
         &lt;!&ndash; additional collaborators and configuration for this bean go here &ndash;&gt;
     </bean>-->
 
-<!--
-    &lt;!&ndash; more bean definitions for services go here &ndash;&gt;
+    <!-- more bean definitions for services go here -->
     <bean id="user1" class="com.frans.pojo.User">
         <property name="name" value="FRANS1"/>
     </bean>
--->
 
     <bean id="user2" class="com.frans.pojo.User">
         <constructor-arg index="0" value="FRANS2"/>
+    </bean>
+
+    <bean id="user3" class="com.frans.pojo.User">
+        <constructor-arg name="name" value="FRANS3"/>
     </bean>
 
 </beans>
