@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--??????
+        &lt;!&ndash;???Bean&ndash;&gt;
+        <bean id="userService" class="com.frans.services.UserServiceImpl"/>
+        <bean id="log" class="com.frans.log.Log"/>
+        <bean id="afterLog" class="com.frans.log.AfterLog"/>
+
+        &lt;!&ndash;????aop&ndash;&gt;
+        <aop:config>
+            &lt;!&ndash;?????:???????????????&ndash;&gt;
+            &lt;!&ndash;expression??????execution(???е?λ??)   &ndash;&gt;
+            <aop:pointcut id="Log" expression="execution(* com.frans.services.UserServiceImpl.*(..))"/>
+            &lt;!&ndash;*??????
+                .*?? ???????????з???
+                (..)?????????????????&ndash;&gt;
+
+
+            &lt;!&ndash;??л???????&ndash;&gt;
+            <aop:advisor advice-ref="log" pointcut-ref="Log"/>
+            <aop:advisor advice-ref="afterLog" pointcut-ref="Log"/>
+        </aop:config>-->
+
+
+    <!--   &lt;!&ndash;????????&ndash;&gt;
+       <bean id="userService" class="com.frans.services.UserServiceImpl"/>
+       <bean id="diy" class="com.frans.java.DiyPoint"/>
+       <aop:config>
+           &lt;!&ndash;        ????????棬 ref??????????&ndash;&gt;
+           <aop:aspect ref="diy">
+               &lt;!&ndash;            ?????&ndash;&gt;
+               <aop:pointcut id="point" expression="execution(* com.frans.services.UserServiceImpl.*(..))"/>
+               &lt;!&ndash;            ??&ndash;&gt;
+               <aop:before method="before" pointcut-ref="point" />
+               <aop:after method="after" pointcut-ref="point"/>
+           </aop:aspect>
+       </aop:config>-->
+
+    <!--?????-->
+    <bean id="userService" class="com.frans.services.UserServiceImpl"/>
+    <bean id="annotationPointCut" class="com.frans.annotion.AnnotionPointCut"/>
+    <!-- ??????????   -->
+    <aop:aspectj-autoproxy/>
+</beans>
