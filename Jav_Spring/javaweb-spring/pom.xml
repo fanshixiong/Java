@@ -17,6 +17,7 @@
         <module>spring06-appconfig</module>
         <module>spring07-aop</module>
         <module>spring10-mybatis</module>
+        <module>spring08-transaction</module>
     </modules>
 
     <dependencies>

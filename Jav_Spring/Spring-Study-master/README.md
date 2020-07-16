@@ -1974,8 +1974,8 @@ public class UserMapperIml2 extends SqlSessionDaoSupport implements UserMapper {
 
 Spring中的事务管理
 
-- 声明式事务
-- 编程式事务
+- 声明式事务：AOP
+- 编程式事务：需要在代码中进行事务的关联
 
 声明式事务
 
