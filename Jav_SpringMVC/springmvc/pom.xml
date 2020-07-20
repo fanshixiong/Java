@@ -13,6 +13,7 @@
         <module>springmvc02-hello</module>
         <module>springmvc03-annotation</module>
         <module>springmvc04-controller</module>
+        <module>springmvc05-json</module>
     </modules>
     <!--导入依赖-->
     <dependencies>
