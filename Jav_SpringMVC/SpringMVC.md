@@ -1521,11 +1521,11 @@ Jackson应该是目前比较好的json解析工具了
 我们这里使用Jackson，使用它需要导入它的jar包；
 
 ```xml
-<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 <dependency>
-   <groupId>com.fasterxml.jackson.core</groupId>
-   <artifactId>jackson-databind</artifactId>
-   <version>2.9.8</version>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.11.1</version>
 </dependency>
 ```
 
@@ -1655,15 +1655,13 @@ public class UserController {
 
 http://localhost:8080/json1
 
-
-
-![img](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
+![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Kr2Q3b19mdVPRfiaSSR0OQ2QCNxRSJebDzgryI1iapfrwBWibv6Ww2CgofjS5K59zdO02OvpoRXCz2w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 发现出现了乱码问题，我们需要设置一下他的编码格式为utf-8，以及它返回的类型；
 
 通过@RequestMaping的produces属性来实现，修改下代码
 
-```
+```java
 //produces:指定响应体返回类型和编码
 @RequestMapping(value = "/json1",produces = "application/json;charset=utf-8")
 ```
