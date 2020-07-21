@@ -1676,7 +1676,7 @@ http://localhost:8080/json1
 
 
 
->   代码优化
+### 11.3、代码优化
 
 **乱码统一解决**
 
@@ -1731,7 +1731,7 @@ public class UserController {
 
 
 
->   测试集合输出
+### 11.4、测试集合输出
 
 增加一个新的方法
 
@@ -1762,11 +1762,11 @@ public String json2() throws JsonProcessingException {
 
 ![img](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
 
->   输出时间对象
+### 11.5、输出时间对象
 
 增加一个新的方法
 
-```
+```java
 @RequestMapping("/json3")
 public String json3() throws JsonProcessingException {
 
@@ -1869,7 +1869,9 @@ public String json5() throws JsonProcessingException {
 
 
 
->   FastJson
+
+
+### 11.6、FastJson
 
 fastjson.jar是阿里开发的一款专门用于Java开发的包，可以方便的实现json对象与JavaBean对象的转换，实现JavaBean对象与json字符串的转换，实现json对象与json字符串的转换。实现json的转换方法很多，最后的实现结果都是一样的。
 
@@ -1957,7 +1959,7 @@ public class FastJsonDemo {
 
 ## 12、Ajax
 
->   简介
+### 12.1、简介
 
 -   **AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）。**
 -   AJAX 是一种在无需重新加载整个网页的情况下，能够更新部分网页的技术。
@@ -1980,7 +1982,7 @@ public class FastJsonDemo {
 
 2、编写一个 ajax-frame.html 使用 iframe 测试，感受下效果
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -2045,7 +2047,7 @@ jQuery 不是生产者，而是大自然搬运工。
 
 jQuery Ajax本质就是 XMLHttpRequest，对他进行了封装，方便调用！
 
-```
+```javascript
 jQuery.ajax(...)
       部分参数：
             url：请求地址

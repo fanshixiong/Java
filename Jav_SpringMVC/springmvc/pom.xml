@@ -14,9 +14,18 @@
         <module>springmvc03-annotation</module>
         <module>springmvc04-controller</module>
         <module>springmvc05-json</module>
+        <module>springmvc06-ajax</module>
     </modules>
     <!--导入依赖-->
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.72</version>
+        </dependency>
+
+
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
