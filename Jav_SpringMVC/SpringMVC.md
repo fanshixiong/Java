@@ -1569,7 +1569,7 @@ web.xml
    </filter>
    <filter-mapping>
        <filter-name>encoding</filter-name>
-       <url-pattern>/</url-pattern>
+       <url-pattern>/*</url-pattern>
    </filter-mapping>
 
 </web-app>
@@ -2075,7 +2075,7 @@ jQuery.ajax(...)
 
 1、配置web.xml 和 springmvc的配置文件，复制上面案例的即可 【记得静态资源过滤和注解驱动配置上】
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -2107,7 +2107,7 @@ jQuery.ajax(...)
 
 2、编写一个AjaxController
 
-```
+```java
 @Controller
 public class AjaxController {
 
@@ -2125,14 +2125,14 @@ public class AjaxController {
 
 3、导入jquery ， 可以使用在线的CDN ， 也可以下载导入
 
-```
+```html
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/statics/js/jquery-3.1.1.min.js"></script>
 ```
 
 4、编写index.jsp测试
 
-```
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
  <head>
@@ -2169,7 +2169,7 @@ public class AjaxController {
 
 实体类user
 
-```
+```java
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -2184,7 +2184,7 @@ public class User {
 
 我们来获取一个集合对象，展示到前端页面
 
-```
+```java
 @RequestMapping("/a2")
 public List<User> ajax2(){
    List<User> list = new ArrayList<User>();
@@ -2197,7 +2197,7 @@ public List<User> ajax2(){
 
 前端页面
 
-```
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -2249,7 +2249,7 @@ public List<User> ajax2(){
 
 我们写一个Controller
 
-```
+```java
 @RequestMapping("/a3")
 public String ajax3(String name,String pwd){
    String msg = "";
@@ -2274,7 +2274,7 @@ public String ajax3(String name,String pwd){
 
 前端页面 login.jsp
 
-```
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -2426,7 +2426,7 @@ public String ajax3(String name,String pwd){
 
 
 
-## 13、拦截器 文件上传
+## 13、拦截器
 
 
 
@@ -2448,7 +2448,7 @@ SpringMVC的处理器拦截器类似于Servlet开发中的过滤器Filter,用于
 
 
 
->   自定义拦截器
+### 13.1、自定义拦截器
 
 那如何实现拦截器呢？
 
@@ -2460,7 +2460,7 @@ SpringMVC的处理器拦截器类似于Servlet开发中的过滤器Filter,用于
 
 3、编写一个拦截器
 
-```
+```java
 package com.kuang.interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -2493,7 +2493,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
 4、在springmvc的配置文件中配置拦截器
 
-```
+```xml
 <!--关于拦截器的配置-->
 <mvc:interceptors>
    <mvc:interceptor>
@@ -2509,7 +2509,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
 5、编写一个Controller，接收请求
 
-```
+```java
 package com.kuang.controller;
 
 import org.springframework.stereotype.Controller;
@@ -2531,7 +2531,7 @@ public class InterceptorController {
 
 6、前端 index.jsp
 
-```
+```jsp
 <a href="${pageContext.request.contextPath}/interceptor">拦截器测试</a>
 ```
 
@@ -2541,7 +2541,9 @@ public class InterceptorController {
 
 ![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7KshicHhIPa51icXVueiaMfB0HtJH2NsHDlcibyEJuibgomZzDNpHiammcSRt2V87uPMYGC7h0gt5KS2Dcw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
->   验证用户是否登录 (认证用户)
+
+
+### 13.2、验证用户是否登录 (认证用户)
 
 **实现思路**
 
@@ -2555,7 +2557,7 @@ public class InterceptorController {
 
 1、编写一个登陆页面  login.jsp
 
-```
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -2577,7 +2579,7 @@ public class InterceptorController {
 
 2、编写一个Controller处理请求
 
-```
+```java
 package com.kuang.controller;
 
 import org.springframework.stereotype.Controller;
@@ -2622,7 +2624,7 @@ public class UserController {
 
 3、编写一个登陆成功的页面 success.jsp
 
-```
+```jsp
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -2641,7 +2643,7 @@ ${user}
 
 4、在 index 页面上测试跳转！启动Tomcat 测试，未登录也可以进入主页！
 
-```
+```html
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
  <head>
@@ -2659,7 +2661,7 @@ ${user}
 
 5、编写用户登录拦截器
 
-```
+```java
 package com.kuang.interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -2704,7 +2706,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 
 6、在Springmvc的配置文件中注册拦截器
 
-```
+```xml
 <!--关于拦截器的配置-->
 <mvc:interceptors>
    <mvc:interceptor>
@@ -2724,7 +2726,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 
 
 
-文件上传和下载
+## 14、 文件上传和下载
 
 >   准备工作
 
@@ -2738,7 +2740,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 -   multipart/form-data：这种编码方式会以二进制流的方式来处理表单数据，这种编码方式会把文件域指定文件的内容也封装到请求参数中，不会对字符编码。
 -   text/plain：除了把空格转换为 "+" 号外，其他字符都不做编码处理，这种方式适用直接通过表单发送邮件。
 
-```
+```html
 <form action="" enctype="multipart/form-data" method="post">
    <input type="file" name="file"/>
    <input type="submit">
@@ -2755,11 +2757,11 @@ public class LoginInterceptor implements HandlerInterceptor {
 
 
 
->   文件上传
+### 14.1、文件上传
 
 1、导入文件上传的jar包，commons-fileupload ， Maven会自动帮我们导入他的依赖包 commons-io包；
 
-```
+```xml
 <!--文件上传-->
 <dependency>
    <groupId>commons-fileupload</groupId>
@@ -2778,7 +2780,7 @@ public class LoginInterceptor implements HandlerInterceptor {
 
 【**注意！！！这个bena的id必须为：multipartResolver ， 否则上传文件会报400的错误！在这里栽过坑,教训！**】
 
-```
+```xml
 <!--文件上传配置-->
 <bean id="multipartResolver"  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
    <!-- 请求的编码格式，必须和jSP的pageEncoding属性一致，以便正确读取表单的内容，默认为ISO-8859-1 -->
@@ -2799,7 +2801,7 @@ CommonsMultipartFile 的 常用方法：
 
 3、编写前端页面
 
-```
+```html
 <form action="/upload" enctype="multipart/form-data" method="post">
  <input type="file" name="file"/>
  <input type="submit" value="upload">
@@ -2808,7 +2810,7 @@ CommonsMultipartFile 的 常用方法：
 
 4、**Controller**
 
-```
+```java
 package com.kuang.controller;
 
 import org.springframework.stereotype.Controller;
@@ -2869,11 +2871,11 @@ public class FileController {
 
 1、编写Controller
 
-```
+```java
 /*
 * 采用file.Transto 来保存上传的文件
 */
-@RequestMapping("/upload2")
+@RequestMapping("/upload")
 public String  fileUpload2(@RequestParam("file") CommonsMultipartFile file, HttpServletRequest request) throws IOException {
 
    //上传路径保存设置
@@ -2898,7 +2900,7 @@ public String  fileUpload2(@RequestParam("file") CommonsMultipartFile file, Http
 
 
 
->   文件下载
+### 14.2、文件下载
 
 **文件下载步骤：**
 

@@ -11,7 +11,9 @@
         <module name="springmvc06-ajax" />
         <module name="springmvc03-annotation" />
         <module name="springmvc04-controller" />
+        <module name="springmvc08-fileupload" />
         <module name="springmvc05-json" />
+        <module name="springmvc07-Interceptor" />
         <module name="springmvc01-servlet" />
       </profile>
     </annotationProcessing>
