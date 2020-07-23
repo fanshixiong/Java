@@ -1,0 +1,29 @@
+.down_wrap {
+  position: relative;
+}
+.down_inner {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.down_inner .return {
+  box-shadow: 5px 5px 10px #a9a9a9;
+  position: absolute;
+  bottom: 25px;
+
+  font-size: 15px;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  border-bottom: 1px #333 solid;
+}
+.down_inner .return1 {left: 100px;}
+.down_inner .return2 {left: 380px;}
+.down_inner .return3 {right: 100px;}
+
+
+.down_inner .return:hover {
+  background-color: #111111b4;
+  color: white;
+  border-bottom: 1px #333 solid;
+}

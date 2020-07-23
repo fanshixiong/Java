@@ -1,0 +1,30 @@
+.down_wrap a {
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.476);
+  color: white;
+}
+.down_wrap a:hover {
+  background-color: white;
+  color: black;
+}
+.down_wrap table {
+  width: 100%;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.down_wrap td,
+.down_wrap th {
+  border: 1px solid black;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+.down_wrap tbody > tr:nth-child(even) {
+  background-color: #d6d6d6;
+}
+

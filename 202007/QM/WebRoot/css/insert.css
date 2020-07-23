@@ -1,0 +1,68 @@
+.down_wrap {
+  position: relative;
+  box-sizing: border-box;
+}
+.down_wrap .down_inner {
+  margin-top: 25px;
+  margin-left: 100px;
+  width: 400px;
+}
+.down_wrap .down_inner h1 {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 26px;
+}
+.down_wrap .down_inner span {
+  display: inline-block;
+  height: 30px;
+  line-height: 35px;
+}
+.down_wrap .down_inner .inner_list {
+  margin-right: 200px;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 7px;
+  width: 100%;
+  height: 30px;
+}
+.down_wrap .down_inner .inner_list .inner_inp {
+  line-height: 30px;
+  font-weight: 300;
+  width: 250px;
+  height: 90%;
+  border-bottom: 1px solid #333;
+  font-size: 17px;
+  float: right;
+}
+.down_wrap .down_inner .inner_list .inner_inp:focus {
+  background-color: rgba(51, 51, 51, 0.054);
+}
+.down_wrap .inner_btn {
+  box-shadow: 5px 5px 10px #a9a9a9;
+  font-size: 15px;
+  margin-top: 25px;
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  border-bottom: 1px #333 solid;
+}
+.down_wrap .btn1 {
+  position: absolute;
+  left: 100px;
+  bottom: 25px;
+}
+.down_wrap .btn2 {
+  position: absolute;
+  left: 400px;
+  bottom: 25px;
+}
+.down_wrap .btn3 {
+  position: absolute;
+  right: 100px;
+  bottom: 25px;
+}
+.down_wrap .inner_btn:hover {
+  background-color: #111111b4;
+  color: white;
+  box-shadow: 5px 5px 10px #a9a9a9;
+}

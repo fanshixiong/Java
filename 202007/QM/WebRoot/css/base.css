@@ -1,0 +1,140 @@
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    background: url(../img/1.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.outer {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.down_inner {
+    margin-top: 25px;
+    margin-left: 100px;
+    width: 400px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 26px;
+}
+
+
+/*下面整个都是框架样式*/
+
+.nav_wrap {
+    background-color: rgba(0, 0, 0, .3);
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.nav_wrap .nav_inner {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nav_wrap .nav_inner a {
+    color: white;
+}
+
+.nav_wrap .nav_inner .nav_left {
+    float: left;
+}
+
+.nav_wrap .nav_inner .nav_left img {
+    width: 25px;
+    
+}
+
+.nav_wrap .nav_inner .nav_left span {
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+
+.nav_wrap .nav_inner .nav_right {
+    width: 650px;
+    height: 100%;
+    float: right;
+}
+
+.nav_wrap .nav_inner .nav_right .search {
+    width: 270px;
+    height: 40px;
+    margin: 7px 0;
+    line-height: 50px;
+    float: left;
+}
+
+.nav_wrap .nav_inner .nav_right .search input {
+    outline: none;
+    width: 230px;
+    float: left;
+    height: 40px;
+    padding: 0 15px;
+    border: none;
+}
+
+.nav_wrap .nav_inner .nav_right .search button {
+    float: right;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.nav_wrap .nav_inner .nav_right .search button:hover {
+    color: white;
+    background-color: #938c8c;
+}
+
+
+.nav_wrap .nav_inner .nav_right .exit,
+.nav_wrap .nav_inner .nav_right .pay,
+.nav_wrap .nav_inner .nav_right .insert {
+    float: right;
+}
+
+.nav_wrap .nav_inner .nav_right .aa {
+    display: block;
+    height: 50px;
+    width: 110px;
+    text-align: center;
+}
+
+.nav_wrap .nav_inner .nav_right .aa:hover {
+    background-color: white;
+    color: #333;
+}
+
+
+
+
+.down_wrap {
+    overflow-y: auto;
+    width: 1400px;
+    height: 650px;
+    margin: 0 auto;
+    background-color: white;
+}
