@@ -37,4 +37,4 @@
     session.removeAttribute("message");
 %>
 <%@include file="common/foot.jsp" %>
-<script type="text/javascript" src="${pageContext.request.contextPath }/js/pwdmodify.js" charset="utf-8"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/pwdmodify.js" charset="utf-8"></script>

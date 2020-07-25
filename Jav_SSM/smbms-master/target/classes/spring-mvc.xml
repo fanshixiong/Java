@@ -61,7 +61,7 @@
             <!-- 拦截所有的请求，这个必须写在前面，也就是写在【不拦截】的上面 -->
             <mvc:mapping path="/**" />
             <!-- 但是排除下面这些，也就是不拦截请求 -->
-            <mvc:exclude-mapping path="/**/login.do" />
+<!--            <mvc:exclude-mapping path="/**/login.do" />-->
             <bean class="interceptor.LoginInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
@@ -72,4 +72,5 @@
         <property name="maxInMemorySize" value="4096" />
         <property name="defaultEncoding" value="UTF-8"/>
     </bean>-->
+    <mvc:default-servlet-handler/>
 </beans>

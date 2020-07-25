@@ -13,7 +13,7 @@
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div>
                     <label for="userCode">用户编码：</label>
-                    <input type="text" name="userCode" id="userCode" value=""> 
+                    <input type="text" name="userCode" id="userCode" value="">
 					<!-- 放置提示信息 -->
 					<font color="red"></font>
                 </div>

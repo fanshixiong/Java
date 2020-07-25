@@ -9,7 +9,7 @@
         <div class="providerAdd">
             不想修改的信息可不填写
         <form id="userForm" name="userForm" method="post" action="${pageContext.request.contextPath }/user/sava.do">
-			<input type="hidden" name="id" value="${user.id }"/>
+			<input type="hidden" name="id" id="id" value="${user.id }"/>
 			 <div>
                     <label for="userName">用户名称：</label>
                     <input type="text" name="userName" id="userName" value="${user.userName }"> 
@@ -48,28 +48,9 @@
 				<div>
                     <label >用户角色：</label>
                     <!-- 列出所有的角色分类 -->
-                    <select name="userRole">
-                        <option value="0"
-                                <c:if test="${user.userRole == 0}">
-                                    selected
-                                </c:if>
+                    <input id="rid" name="rid" type="hidden" value="${user.role.id}">
+                    <select name="userRole" id="userRole">
 
-                        >--请选择--</option>
-                        <option value="1"
-                                <c:if test="${user.userRole == 1}">
-                                    selected
-                                </c:if>
-                        >系统管理员</option>
-                        <option value="2"
-                                <c:if test="${user.userRole == 2}">
-                                    selected
-                                </c:if>
-                        >经理</option>
-                        <option value="3"
-                                <c:if test="${user.userRole == 3}">
-                                    selected
-                                </c:if>
-                        >普通员工</option>
                     </select>
         			<font color="red"></font>
                 </div>
@@ -81,5 +62,8 @@
         </div>
     </div>
 </section>
+<%
+    session.removeAttribute("user");
+%>
 <%@include file="common/foot.jsp" %>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/usermodify.js"></script>

@@ -8,6 +8,6 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/common.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/calendar/WdatePicker.js"></script>
-<script type="text/javascript" src="/static/layer/layer.js"></script>
+<script type="text/javascript" src="/layer/layer.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <%
     Object userRoleItem = session.getAttribute("userRoleItem");
     if(userRoleItem == null){
-        response.sendRedirect("/role/findByRoleList");
+        response.sendRedirect("/smbms/role/getRoleList.do");
     }
 %>
 <div class="right">
@@ -76,4 +76,4 @@
         </div>
 </div>
 <%@include file="common/foot.jsp" %>
-<script type="text/javascript" src="${pageContext.request.contextPath }/js/useradd.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/useradd.js"></script>

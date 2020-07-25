@@ -66,4 +66,4 @@
 </section>
 
 <%@include file="common/foot.jsp" %>
-<script type="text/javascript" src="${pageContext.request.contextPath }/js/billmodify.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/billmodify.js"></script>

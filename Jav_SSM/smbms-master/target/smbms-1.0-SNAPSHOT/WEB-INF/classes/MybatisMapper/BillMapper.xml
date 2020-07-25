@@ -3,7 +3,7 @@
 <mapper namespace="dao.BillDao">
 
 	<select id="getAllBill" resultMap="getBillMap">
-		select * from smbms_bill as b
+		select b.id as bId,b.*,p.id as pId,p.* from smbms_bill as b
 		inner join smbms_provider as p on p.id = b.providerId
 	</select>
 	<select id="findByBillCount" resultType="int">
@@ -31,7 +31,7 @@
 		</if>
 	</select>
 	<select id="getBill" resultMap="getBillMap">
-		select * from smbms_bill as b
+		select b.id as bId,b.*,p.id as pId,p.* from smbms_bill as b
 		inner join smbms_provider as p on p.id = b.providerId
 		where 1 = 1
 		<if test="key != ''">
@@ -49,12 +49,13 @@
 		limit #{pageBean.startIndex},#{pageBean.pageSize}
 	</select>
 	<select id="getBillSingle" resultMap="getBillMap">
-		select * from smbms_bill as b
+		select b.id as bId,b.*,p.id as pId,p.* from smbms_bill as b
 		inner join smbms_provider as p on p.id = b.providerId
 		where b.id = #{id}
 	</select>
+
 	<resultMap id="getBillMap" type="entity.Bill">
-		<id property="id" column="id"/>
+		<id property="id" column="bId"/>
 		<result property="billCode" column="billCode"/>
 		<result property="productName" column="productName"/>
 		<result property="productDesc" column="productDesc"/>
@@ -67,7 +68,7 @@
 		<result property="modifyBy" column="modifyBy"/>
 		<result property="modifyDate" column="modifyDate"/>
 		<collection property="provider" ofType="entity.Provider">
-			<id property="id" column="id"/>
+			<id property="id" column="pId"/>
 			<result property="proCode" column="proCode"/>
 			<result property="proName" column="proName"/>
 			<result property="proDesc" column="proDesc"/>
@@ -81,4 +82,15 @@
 			<result property="modifyDate" column="modifyDate"/>
 		</collection>
 	</resultMap>
+	<insert id="addBill">
+		insert into smbms_bill(`billCode`,`productName`,`productDesc`,`productUnit`,`productCount`,`totalPrice`,`isPayment`,`createdBy`,`creationDate`,providerId)
+		value(#{bill.billCode},#{bill.productName},#{bill.productDesc},#{bill.productUnit},#{bill.productCount},#{bill.totalPrice},#{bill.isPayment},#{bill.createdBy},now(),#{bill.providerId})
+	</insert>
+	<update id="updBill">
+		update smbms_bill set productName = #{bill.productName},productUnit = #{bill.productUnit},productCount = #{bill.productCount},
+		totalPrice = #{bill.totalPrice},providerId = #{bill.providerId},isPayment = #{bill.isPayment},modifyBy = #{bill.modifyBy},modifyDate = now() where id = #{bill.id}
+	</update>
+	<delete id="delBill">
+		delete from smbms_bill where id = #{id}
+	</delete>
 </mapper>

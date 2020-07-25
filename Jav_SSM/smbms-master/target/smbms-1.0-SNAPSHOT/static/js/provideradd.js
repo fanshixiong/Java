@@ -24,7 +24,6 @@ $(function(){
 	 * jquery的方法传递
 	 */
 	proCode.on("blur",function(){
-		alert(1)
 		if(proCode.val() != null && proCode.val() != ""){
 			validateTip(proCode.next(),{"color":"green"},imgYes,true);
 		}else{

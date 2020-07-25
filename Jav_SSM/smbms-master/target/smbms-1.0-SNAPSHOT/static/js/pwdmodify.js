@@ -6,43 +6,44 @@ var saveBtn = null;
 $(function(){
 	oldpassword = $("#oldpassword");
 	newpassword = $("#newpassword");
-	rnewpassword = $("#rnewpassword");
+	rnewpassword = $("#reNewPassword");
 	saveBtn = $("#save");
 	
 	oldpassword.next().html("*");
 	newpassword.next().html("*");
 	rnewpassword.next().html("*");
 	oldpassword.on("blur",function(){
-		$.ajax({
-			type:"GET",
-			url:path+"/user/checkPwd.do",
-			data:{oldpassword:oldpassword.val()},
-			success:function(data){
-				if(data == "true"){//旧密码正确
-					validateTip(oldpassword.next(),{"color":"green"},imgYes,true);
-				}else if(data == "false"){//旧密码输入不正确
-					validateTip(oldpassword.next(),{"color":"red"},imgNo + " 原密码输入不正确",false);
-				}else if(data == "sessionerror"){//当前用户session过期，请重新登录
-					validateTip(oldpassword.next(),{"color":"red"},imgNo + " 当前用户session过期，请重新登录",false);
-				}else if(data == "error"){//旧密码输入为空
-					validateTip(oldpassword.next(),{"color":"red"},imgNo + " 请输入旧密码",false);
-				}
-			},
-			error:function(data){
+        $.ajax({
+            type:"GET",
+            url:path+"/user/checkPwd.do",
+            data:{oldpassword:oldpassword.val()},
+            dataType:"JSON",
+            success:function(data){
+                if(data.result == "true"){//旧密码正确
+                    validateTip(oldpassword.next(),{"color":"green"},imgYes,true);
+                }else if(data.result == "false"){//旧密码输入不正确
+                    validateTip(oldpassword.next(),{"color":"red"},imgNo + " 原密码输入不正确",false);
+                }else if(data.result == "sessionerror"){//当前用户session过期，请重新登录
+                    validateTip(oldpassword.next(),{"color":"red"},imgNo + " 当前用户session过期，请重新登录",false);
+                }else if(data.result == "error"){//旧密码输入为空
+                    validateTip(oldpassword.next(),{"color":"red"},imgNo + " 请输入旧密码",false);
+                }
+            },
+            error:function(data){
                 //请求出错
                 validateTip(oldpassword.next(),{"color":"red"},imgNo + " 请求错误",false);
             }
-		});
+        });
 
 
-	}).on("focus",function(){
+    }).on("focus",function(){
 		validateTip(oldpassword.next(),{"color":"#666666"},"* 请输入原密码",false);
 	});
 	
 	newpassword.on("focus",function(){
 		validateTip(newpassword.next(),{"color":"#666666"},"* 密码长度必须是大于6小于20",false);
 	}).on("blur",function(){
-		if(newpassword.val() != null && newpassword.val().length > 6
+		if(newpassword.val() != "" && newpassword.val().length > 6
 				&& newpassword.val().length < 20 ){
 			validateTip(newpassword.next(),{"color":"green"},imgYes,true);
 		}else{
@@ -54,7 +55,7 @@ $(function(){
 	rnewpassword.on("focus",function(){
 		validateTip(rnewpassword.next(),{"color":"#666666"},"* 请输入与上面一致的密码",false);
 	}).on("blur",function(){
-		if(rnewpassword.val() != null && rnewpassword.val().length > 6
+		if(rnewpassword.val() != "" && rnewpassword.val().length > 6
 				&& rnewpassword.val().length < 20 && newpassword.val() == rnewpassword.val()){
 			validateTip(rnewpassword.next(),{"color":"green"},imgYes,true);
 		}else{
@@ -67,13 +68,13 @@ $(function(){
 		oldpassword.blur();
 		newpassword.blur();
 		rnewpassword.blur();
-		if(oldpassword.attr("validateStatus") == "true" 
+		if(oldpassword.attr("validateStatus") == "true"
 			&& newpassword.attr("validateStatus") == "true"
 			&& rnewpassword.attr("validateStatus") == "true"){
 			if(confirm("确定要修改密码？")){
 				$("#userForm").submit();
 			}
 		}
-		
+		return false;
 	});
 });

@@ -3,7 +3,7 @@
 <%@include file="common/head.jsp"%>
 <%
 	if (session.getAttribute("userList")==null){
-	    response.sendRedirect("../user/management.do");
+	    response.sendRedirect("/smbms/user/management.do");
 	}
 %>
 
@@ -42,7 +42,7 @@
 	        		</select>
 					 <input type="hidden" name="pageIndex" value="1"/>
 					 <input	value="查 询" type="submit" id="searchbutton">
-					 <a href="/user/useradd.do" >添加用户</a>
+					 <a href="${pageContext.request.contextPath}/user/useradd.do" >添加用户</a>
 				</form>
             </div>
             <!--用户-->
@@ -114,4 +114,4 @@
 	session.removeAttribute("queryUserRole");
 %>
 <%@include file="common/foot.jsp" %>
-<script type="text/javascript" src="${pageContext.request.contextPath }/static/static/js/userlist.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/userlist.js"></script>

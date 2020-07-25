@@ -12,7 +12,7 @@ $(function(){
 	oldpassword.next().html("*");
 	newpassword.next().html("*");
 	rnewpassword.next().html("*");
-	
+
 	oldpassword.on("blur",function(){
 		$.ajax({
 			type:"GET",

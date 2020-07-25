@@ -11,7 +11,7 @@ public class Role {
 	private Date creationDate; //创建时间
 	private Integer modifyBy; //更新者
 	private Date modifyDate;//更新时间
-	
+
 	public Integer getId() {
 		return id;
 	}

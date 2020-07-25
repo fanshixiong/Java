@@ -19,7 +19,7 @@ public class Bill {
 	private Date modifyDate;//更新时间
 	
 	private String providerName;//供应商名称
-	
+
 	
 	public String getProviderName() {
 		return providerName;

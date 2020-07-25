@@ -287,7 +287,7 @@ public class UserServlet extends HttpServlet {
     	pages.setTotalCount(totalCount);
     	
     	int totalPageCount = pages.getTotalPageCount();
-    	
+
     	//控制首页和尾页
     	if(currentPageNo < 1){
     		currentPageNo = 1;

@@ -3,7 +3,7 @@
 <%@include file="common/head.jsp"%>
 <%
 	if (session.getAttribute("providerList")==null){
-		response.sendRedirect("../provider/management.do");
+		response.sendRedirect("/smbms/provider/management.do");
 	}
 %>
 <div class="right">
@@ -15,13 +15,13 @@
         	<form method="get" action="${pageContext.request.contextPath }/provider/management.do">
 				<input type="hidden" name="pageIndex" value="1"/>
 				<span>供应商编码：</span>
-				<input name="queryProCode" type="text" value="">
+				<input name="queryProCode" type="text" value="${proCode}">
 				
 				<span>供应商名称：</span>
-				<input name="queryProName" type="text" value="">
+				<input name="queryProName" type="text" value="${proName}">
 
 				<input value="查 询" type="submit" id="searchbutton">
-				<a href="/provider/provideradd.do">添加供应商</a>
+				<a href="${pageContext.request.contextPath}/provider/provideradd.do">添加供应商</a>
 			</form>
         </div>
         <!--供应商操作表格-->

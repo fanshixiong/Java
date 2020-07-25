@@ -8,7 +8,7 @@
             <span>订单管理页面 >> 订单添加页面</span>
         </div>
         <div class="providerAdd">
-          <form id="billForm" name="billForm" method="post" action="${pageContext.request.contextPath }/jsp/bill.do">
+          <form id="billForm" name="billForm" method="post" action="${pageContext.request.contextPath }/bill/sava.do">
 				<input type="hidden" name="method" value="modifysave">
 				<input type="hidden" name="id" value="${bill.id }">
                 <!--div的class 为error是验证错误，ok是验证成功-->
@@ -37,8 +37,8 @@
 					<font color="red"></font>
                 </div>
                 <div>
-                    <label for="providerId">供应商：${bill.provider.id }</label>
-                    <input type="hidden" value="${bill.provider.id }" id="pid" />
+                    <label for="providerId">供应商：</label>
+                    <input type="hidden" value="${bill.provider.id}" id="pid" />
 					<select name="providerId" id="providerId">
 
 		        	</select>

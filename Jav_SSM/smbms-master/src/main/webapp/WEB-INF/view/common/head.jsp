@@ -8,8 +8,8 @@
     <title>超市订单管理系统</title>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/public.css" />
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/static/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/static/css/public.css" />
 </head>
 <body>
 <!--头部-->

@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class BillServiceImpl implements BillService {
-	
+
 	private BillDao billDao;
 	public BillServiceImpl(){
 		billDao = new BillDaoImpl();

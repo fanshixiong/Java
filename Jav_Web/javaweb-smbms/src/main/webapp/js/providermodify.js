@@ -12,7 +12,7 @@ $(function(){
 	//初始化的时候，要把所有的提示信息变为：* 以提示必填项，更灵活，不要写在页面上
 	proContact.next().html("*");
 	proPhone.next().html("*");
-	
+
 	/*
 	 * 验证
 	 * 失焦\获焦

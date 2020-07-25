@@ -114,4 +114,4 @@
 	session.removeAttribute("queryUserRole");
 %>
 <%@include file="common/foot.jsp" %>
-<script type="text/javascript" src="${pageContext.request.contextPath }/js/userlist.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/userlist.js"></script>

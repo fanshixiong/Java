@@ -17,7 +17,7 @@ $(function(){
 	proName.next().html("*");
 	proContact.next().html("*");
 	proPhone.next().html("*");
-	
+
 	/*
 	 * 验证
 	 * 失焦\获焦

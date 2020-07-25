@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class ProviderServiceImpl implements ProviderService {
-	
+
 	private ProviderDao providerDao;
 	private BillDao  billDao;
 	public ProviderServiceImpl(){

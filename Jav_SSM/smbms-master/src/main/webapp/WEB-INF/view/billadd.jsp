@@ -70,5 +70,5 @@
     session.removeAttribute("providerList");
 %>
 <%@include file="common/foot.jsp" %>
-<script type="text/javascript" src="${pageContext.request.contextPath }/js/billadd.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath }/js/BillAdds.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/billadd.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/static/js/BillAdds.js"></script>

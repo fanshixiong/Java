@@ -17,8 +17,26 @@ function priceReg (value){
 	}
 	return value;
 }
-
-
+//ajax请求供应商下拉列表
+/*$(function () {
+    $.ajax({
+        type:"post",
+        url:path+"/provider/getProList.do",
+        dataType:"JSON",
+        success:function (data) {
+            if(data != null){
+                $("#providerId").html("");
+                var options = "<option value='0'>--请选择--</option>"
+                for (var i = 0;i < data.length;i++){
+                	options += "<option value='"+data[i].id+"'>"+data[i].proName+"</option>"
+                }
+                $("#providerId").html(options);
+            }
+        },error:function (data) {
+			alert("系统异常！")
+        }
+    })
+})*/
 $(function(){
 	billCode = $("#billCode");
 	productName = $("#productName");
@@ -100,9 +118,26 @@ $(function(){
 	}).on("blur",function(){
 		this.value = priceReg(this.value);
 	});
-	
 
-	
+	$(function () {
+        addBtn.bind("click",function(){
+            if(billCode.attr("validateStatus") != "true") {
+                billCode.blur();
+            }else if(productName.attr("validateStatus") != "true"){
+                productName.blur();
+            }else if(productUnit.attr("validateStatus") != "true"){
+                productUnit.blur();
+            }else if(providerId.attr("validateStatus") != "true"){
+                providerId.blur();
+            }else{
+                if(confirm("是否确认提交数据")){
+                    $("#billFrom").submit();
+                }
+            }
+            return false;
+        });
+    })
+
 	backBtn.on("click",function(){
 		if(referer != undefined 
 			&& null != referer 

@@ -3,7 +3,7 @@
 <%@include file="common/head.jsp"%>
 <%
 	if (session.getAttribute("billList")==null){
-	    response.sendRedirect("../bill/management.do");
+	    response.sendRedirect("/smbms/bill/management.do");
 	}
 %>
 <div class="right">
@@ -16,13 +16,9 @@
 			<span>商品名称：</span>
 			<input name="queryProductName" type="text" value="${queryProductName == null?'':queryProductName}">
 			<span>供应商：</span>
-			<select name="queryProviderId">
-				<c:if test="${providerList != null }">
-				   <option value="0">--请选择--</option>
-				   <c:forEach var="provider" items="${providerList}">
-				   		<option value="${provider.id}">${provider.proName}</option>
-				   </c:forEach>
-				</c:if>
+		   <input type="hidden" id="proId" value="${proId}">
+			<select name="queryProviderId" id="provider">
+
        		</select>
 			 
 			<span>是否付款：</span>
@@ -33,7 +29,7 @@
        		</select>
 		   <input type="hidden" name="pageIndex" value="1"/>
 			 <input	value="查 询" type="submit" id="searchbutton">
-			 <a href="/bill/billadd.do">添加订单</a>
+			 <a href="${pageContext.request.contextPath}/bill/billadd.do">添加订单</a>
 		</form>
        </div>
        <!--账单表格 样式和供应商公用-->
@@ -81,9 +77,9 @@
       </table>
 	<input type="hidden" id="totalPageCount" value="${pageBean.totalPage}"/>
 	<c:import url="rollpage.jsp">
-		<c:param name="totalCount" value="${totalCount}"/>
-		<c:param name="currentPageNo" value="${currentPageNo}"/>
-		<c:param name="totalPageCount" value="${totalPageCount}"/>
+		<c:param name="totalCount" value="${pageBean.totalRecord}"/>
+		<c:param name="currentPageNo" value="${pageBean.pageNum}"/>
+		<c:param name="totalPageCount" value="${pageBean.totalPage}"/>
 	</c:import>
   </div>
 </section>
@@ -102,6 +98,10 @@
 </div>
 <%
 	session.removeAttribute("billList");
+	session.removeAttribute("pageBean");
+	session.removeAttribute("queryIsPayment");
+	session.removeAttribute("queryProductName");
+	session.removeAttribute("proId");
 %>
 <%@include file="common/foot.jsp" %>
 <script type="text/javascript" src="${pageContext.request.contextPath }/static/js/billlist.js"></script>
