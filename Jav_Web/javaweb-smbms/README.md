@@ -16,7 +16,7 @@
 	![image-20200725193654292](F:\Java\Java_Study\Jav_Web\javaweb-smbms\README.assets\image-20200725193654292.png)
 	
 6. 编写实体类
-  ROM映射:表-类映射
+    ROM映射:表-类映射
 
 7. 编写基础公共类
    1、数据库配置文件（mysql5.xx和8.xx的编写有差异）
@@ -184,7 +184,7 @@ public class BaseDao {
 
     ![image-20200725213959723](F:\Java\Java_Study\Jav_Web\javaweb-smbms\README.assets\image-20200725213959723.png)
 ### 登录功能实现
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200516125301633.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbGxfbG92ZQ==,size_16,color_FFFFFF,t_70)
+​                           		![image-20200725193547041](F:\Java\Java_Study\Jav_Web\javaweb-smbms\README.assets\image-20200725193547041.png)
 1. 编写前端页面
 2. 设置首页
 	1.设置欢迎首页
