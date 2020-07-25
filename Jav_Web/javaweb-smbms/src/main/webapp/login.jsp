@@ -7,9 +7,6 @@
     <title>系统登录 - 超市订单管理系统</title>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/style.css" />
     <script type="text/javascript">
-	/* if(top.location!=self.location){
-	      top.location=self.location;
-	 } */
     </script>
 </head>
 <body class="login_bg">
