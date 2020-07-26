@@ -1,5 +1,9 @@
 package util;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
 /**
@@ -7,6 +11,7 @@ import java.util.List;
  *	分页显示工具类
  * @param <T>	传入的泛型集合
  */
+@Data
 public class PageBean<T> {
 
 	//当前页第几页，从请求那边传过来
@@ -68,95 +73,5 @@ public class PageBean<T> {
 				this.start = end-5;
 			}
 		}
-	}
-
-
-	public T getObject() {
-		return object;
-	}
-
-
-	public void setObject(T object) {
-		this.object = object;
-	}
-
-
-	public int getPageNum() {
-		return pageNum;
-	}
-
-	public void setPageNum(int pageNum) {
-		this.pageNum = pageNum;
-	}
-
-	public int getPageSize() {
-		return pageSize;
-	}
-
-	public void setPageSize(int pageSize) {
-		this.pageSize = pageSize;
-	}
-
-	public int getTotalRecord() {
-		return totalRecord;
-	}
-
-	public void setTotalRecord(int totalRecord) {
-		this.totalRecord = totalRecord;
-	}
-
-	public int getTotalPage() {
-		return totalPage;
-	}
-
-	public void setTotalPage(int totalPage) {
-		this.totalPage = totalPage;
-	}
-
-	public int getStartIndex() {
-		return startIndex;
-	}
-
-	public void setStartIndex(int startIndex) {
-		this.startIndex = startIndex;
-	}
-
-	public List<T> getList() {
-		return list;
-	}
-
-	public void setList(List<T> list) {
-		this.list = list;
-	}
-
-	public int getStart() {
-		return start;
-	}
-
-	public void setStart(int start) {
-		this.start = start;
-	}
-
-	public int getEnd() {
-		return end;
-	}
-
-	public void setEnd(int end) {
-		this.end = end;
-	}
-
-	@Override
-	public String toString() {
-		return "PageBean{" +
-				"pageNum=" + pageNum +
-				", pageSize=" + pageSize +
-				", totalRecord=" + totalRecord +
-				", totalPage=" + totalPage +
-				", startIndex=" + startIndex +
-				", object=" + object +
-				", list=" + list +
-				", start=" + start +
-				", end=" + end +
-				'}';
 	}
 }

@@ -60,7 +60,7 @@ public interface UserDao {
     int findByUserPwd(@Param("id") long id, @Param("oldPwd") String oldPwd);
 
     /**
-     * 根据用户编码和y用户角色编号 分页查询
+     * 根据用户编码和用户角色编号 分页查询
      * @param pageBean 分页
      * @param queryname 用户编码
      * @param userRoleId 用户角色编号

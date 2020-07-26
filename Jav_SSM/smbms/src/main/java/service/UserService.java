@@ -7,7 +7,7 @@ public interface UserService {
 
 
 	/** 验证登陆
-	 * @param User 用户表
+	 * @param userCode 用户表
 	 * @return 验证登陆结果(i：用户编号，0：用户名密码不匹配，-1：用户名不存在)
 	 */
 	int checklogin(String userCode, String userPassword);

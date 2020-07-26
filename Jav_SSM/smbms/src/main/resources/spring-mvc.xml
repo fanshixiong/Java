@@ -29,16 +29,6 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
-    <!-- 全局异常处理 -->
-    <!--<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
-        <!--<property name="exceptionMappings">-->
-            <!--<props>-->
-                <!--&lt;!&ndash;可以定义多个异常&ndash;&gt;-->
-                <!--<prop key="java.lang.RuntimeException">error</prop>-->
-            <!--</props>-->
-        <!--</property>-->
-    <!--</bean>-->
-
     <!--alibaba解析json-->
     <mvc:annotation-driven>
         <mvc:message-converters register-defaults="false">
@@ -60,17 +50,9 @@
         <mvc:interceptor>
             <!-- 拦截所有的请求，这个必须写在前面，也就是写在【不拦截】的上面 -->
             <mvc:mapping path="/**" />
-            <!-- 但是排除下面这些，也就是不拦截请求 -->
-<!--            <mvc:exclude-mapping path="/**/login.do" />-->
             <bean class="interceptor.LoginInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
 
-    <!-- 多部分文件上传 -->
-    <!--<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="10000000" />
-        <property name="maxInMemorySize" value="4096" />
-        <property name="defaultEncoding" value="UTF-8"/>
-    </bean>-->
     <mvc:default-servlet-handler/>
 </beans>

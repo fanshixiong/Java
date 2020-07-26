@@ -112,6 +112,7 @@ public class UserDaoImpl implements UserDao{
 		return userList;
 	}
 
+
 	@Override
 	public int deleteUserById(Connection connection, Integer delId) throws Exception {
 		// TODO Auto-generated method stub

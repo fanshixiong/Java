@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <title>系统登录 - 超市订单管理系统</title>
 
-    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script Charset="UTF-8"  src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script Charset="UTF-8"  src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath }/css/style.css" />
 
 

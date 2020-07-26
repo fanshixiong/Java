@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="smbms-master:war" />
+      <artifact name="smbms:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c335c5b-44ca-4d13-bd96-64b2fe34c8ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/javaweb-smbms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/javaweb-smbms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/java/com/frans/dao/user/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/java/com/frans/dao/user/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/js/pwdmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/js/pwdmodify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/common/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/common/foot.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/common/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/common/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/pwdmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/pwdmodify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/js/pwdmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/js/pwdmodify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/common/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/common/foot.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/common/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/common/head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/pwdmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/pwdmodify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +56,9 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="smbms" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,7 +103,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542437833660" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jav_Mybatis/mybatis-smbms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/static/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -100,15 +115,15 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Java\Java_Study\Jav_SSM\smbms\src\main\webapp\static\images" />
       <recent name="D:\DevelopmentProject\IdeaProjects\Supermarketmanagementsystem\src\main\webapp\static\js" />
       <recent name="D:\DevelopmentProject\IdeaProjects\Supermarketmanagementsystem\src\main\webapp" />
       <recent name="D:\DevelopmentProject\IdeaProjects\Supermarketmanagementsystem\src\main\java\service" />
       <recent name="D:\DevelopmentProject\IdeaProjects\Supermarketmanagementsystem\src\main\java\entity" />
-      <recent name="D:\DevelopmentProject\IdeaProjects\Supermarketmanagementsystem\src\main\resources\MybatisMapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -136,6 +151,53 @@
       <option name="MAIN_CLASS_NAME" value="test.JunitTest" />
       <option name="METHOD_NAME" value="Test" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -244,9 +306,9 @@
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="smbms-master:war">
+        <artifact name="smbms:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/smbms" />
           </settings>
         </artifact>
       </deployment>
@@ -309,7 +371,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="smbms-master:war" />
+          <artifact name="smbms:war" />
         </option>
       </method>
     </configuration>
@@ -349,6 +411,7 @@
       <workItem from="1542432676810" duration="4756000" />
       <workItem from="1595574980329" duration="4746000" />
       <workItem from="1595646184035" duration="6019000" />
+      <workItem from="1595753345640" duration="4878000" />
     </task>
     <servers />
   </component>
@@ -375,17 +438,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/controller/BillController.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
