@@ -7,86 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7f7283c-7df9-4ab5-bcd1-d13d50849ca2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/webapp/static/images/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT/static/images/login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/smbms.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/Provider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/util/PageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/java/util/PageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/webapp/WEB-INF/view/common/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/webapp/WEB-INF/view/common/foot.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/MybatisMapper/AddressMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/dao/AddressDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/service/AddressService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT/WEB-INF/classes/serviceImpl/AddressServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/smbms-1.0-SNAPSHOT/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/logs/access_log.2018-11-15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/logs/access_log.2018-11-16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/logs/access_log.2018-11-17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/billadd_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/billadd_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/billlist_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/billlist_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/billmodify_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/billmodify_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/billview_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/billview_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/frame_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/frame_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/provideradd_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/provideradd_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/providerlist_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/providerlist_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/providermodify_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/providermodify_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/providerview_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/providerview_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/pwdmodify_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/pwdmodify_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/rollpage_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/rollpage_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/useradd_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/useradd_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/userlist_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/userlist_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/usermodify_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/usermodify_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/userview_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/WEB_002dINF/view/userview_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/error_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/error_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/login_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/target/tomcat/work/Tomcat/localhost/smbms/org/apache/jsp/login_jsp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/frans/dao/user/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/frans/dao/user/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/pwdmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/pwdmodify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/common/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/foot.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/common/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/pwdmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/pwdmodify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/javaweb-smbms.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/javaweb-smbms.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/javaweb-smbms/js/pwdmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/javaweb-smbms/js/pwdmodify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/javaweb-smbms/jsp/common/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/javaweb-smbms/jsp/common/foot.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/javaweb-smbms/jsp/common/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/javaweb-smbms/jsp/common/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/javaweb-smbms/jsp/pwdmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/javaweb-smbms/jsp/pwdmodify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/javaweb-smbms/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/javaweb-smbms/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/19170333 项目报告.docx" beforeDir="false" afterPath="$PROJECT_DIR$/19170333 项目报告.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -361,6 +283,7 @@
       <workItem from="1594115212903" duration="153000" />
       <workItem from="1595672809080" duration="9374000" />
       <workItem from="1595740074974" duration="11906000" />
+      <workItem from="1595905796944" duration="3028000" />
     </task>
     <servers />
   </component>
