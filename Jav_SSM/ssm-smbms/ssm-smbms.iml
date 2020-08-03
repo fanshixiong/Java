@@ -19,6 +19,9 @@
       <configuration>
         <fileset id="fileset" name="ApplicationContext" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-dao.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-service.xml</file>
         </fileset>
       </configuration>
     </facet>

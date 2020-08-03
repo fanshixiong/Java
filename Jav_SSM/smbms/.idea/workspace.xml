@@ -7,19 +7,294 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c335c5b-44ca-4d13-bd96-64b2fe34c8ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/java/com/frans/dao/user/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/java/com/frans/dao/user/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/js/pwdmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/js/pwdmodify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/common/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/common/foot.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/common/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/common/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/pwdmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/jsp/pwdmodify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/js/pwdmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/js/pwdmodify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/common/foot.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/common/foot.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/common/head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/common/head.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/pwdmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/jsp/pwdmodify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/target/javaweb-smbms/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/.idea/artifacts/my_smbms_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/my_smbms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/com/frans/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/classes/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/common/foot.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/common/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/frame.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/java/com/frans/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/resources/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/src/main/resources/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/com/frans/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/target/classes/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/billadd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/billlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/billmodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/billview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/common/foot.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/common/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/frame.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/provideradd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/providerlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/providermodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/providerview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/pwdmodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/rollpage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/useradd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/userlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/usermodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/view/userview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_smbms/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/com/frans/interceptor/LoginInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/com/frans/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/com/frans/pojo/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/com/frans/pojo/Bill.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/com/frans/pojo/Provider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/com/frans/pojo/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/com/frans/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/classes/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/billadd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/billlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/billmodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/billview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/common/foot.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/common/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/frame.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/provideradd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/providerlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/providermodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/providerview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/pwdmodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/rollpage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/useradd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/userlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/usermodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/view/userview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/BillAdds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/billadd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/billlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/userlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/userview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/java/com/frans/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/java/com/frans/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/java/com/frans/pojo/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/java/com/frans/pojo/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/java/com/frans/pojo/Provider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/java/com/frans/pojo/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/java/com/frans/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/com/frans/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/target/classes/spring-service.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/billadd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/billlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/billmodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/billview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/common/foot.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/common/head.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/frame.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/provideradd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/providerlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/providermodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/providerview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/pwdmodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/rollpage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/useradd.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/userlist.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/usermodify.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/view/userview.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/My97DatePicker.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/lang/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/skin/WdatePicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/skin/datePicker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/skin/default/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/skin/default/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/calendar/skin/whyGreen/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/css/public.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/buy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/clock.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/formBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/gys.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/leftBg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/loginBg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/login_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/login_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/mm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/read.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/schu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/tc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/tianjia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/xiugai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/yh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/images/zd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/BillAdds.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/billadd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/billlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/provideradd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/providerlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/providermodify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/providerview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/pwdmodify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/rollpage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/useradd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/userlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/usermodify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/userview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/.idea/artifacts/ssm_smbms_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/.idea/artifacts/ssm_smbms_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/ssm-smbms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/ssm-smbms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/My97DatePicker.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/My97DatePicker.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/WdatePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/WdatePicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/lang/zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/lang/zh-tw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/skin/WdatePicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/skin/WdatePicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/skin/datePicker.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/skin/datePicker.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/skin/default/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/skin/default/datepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/skin/default/img.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/skin/default/img.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/skin/whyGreen/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/skin/whyGreen/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/calendar/skin/whyGreen/img.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/calendar/skin/whyGreen/img.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/css/public.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/web/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/buy.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/buy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/clock.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/clock.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/formBg.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/formBg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/gys.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/gys.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/leftBg.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/leftBg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/loginBg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/loginBg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/login_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/login_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/login_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/login_img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/mm.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/mm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/n.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/read.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/read.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/schu.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/schu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/tc.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/tc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/tianjia.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/tianjia.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/time.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/time.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/xiugai.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/xiugai.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/y.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/y.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/yh.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/yh.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/images/zd.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/images/zd.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/billadd.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/billmodify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/billlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/billmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/billmodify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/billview.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/billview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/jquery-1.8.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/provideradd.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/provideradd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/providerlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/providerlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/providermodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/providermodify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/providerview.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/providerview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/pwdmodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/pwdmodify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/rollpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/rollpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/time.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/time.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/useradd.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/useradd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/userlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/usermodify.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/out/artifacts/ssm_smbms_war_exploded/static/js/usermodify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/js/userview.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/web/static/js/billview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/billadd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/billadd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/billlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/billlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/billmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/billmodify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/billview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/billview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/common/foot.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/common/head.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/frame.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/provideradd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/provideradd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/providerlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/providerlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/providermodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/providermodify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/providerview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/providerview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/pwdmodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/pwdmodify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/rollpage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/rollpage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/useradd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/useradd.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/userlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/userlist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/usermodify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/usermodify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/jsp/userview.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/out/artifacts/my_smbms_war_exploded/WEB-INF/view/userview.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/web/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,13 +372,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1f7hKAhiMDNYxZnJUUTde0o9uPf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542437833660" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,7 +390,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -412,6 +690,8 @@
       <workItem from="1595574980329" duration="4746000" />
       <workItem from="1595646184035" duration="6019000" />
       <workItem from="1595753345640" duration="4878000" />
+      <workItem from="1596448232108" duration="2737000" />
+      <workItem from="1596452370544" duration="911000" />
     </task>
     <servers />
   </component>
@@ -439,81 +719,7 @@
       </map>
     </option>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>Supermarketmanagementsystem:war</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring|Supermarketmanagementsystem</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: log4j:log4j:1.2.17</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
