@@ -5,13 +5,13 @@
 
 /*登录页面*/
 .login_bg {
-    background: url("../images/loginBg.jpg") 0 0 repeat-x;
+    background-image: url("../images/login.png");
 }
 
 .loginBox {
     width: 1000px;
     margin: 0 auto;
-    background: url("../images/login_bg.jpg") 0 0 no-repeat;
+    background: url("../images/login.png") 0 0 no-repeat;
 }
 
 .loginHeader {

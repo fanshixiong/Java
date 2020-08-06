@@ -10,7 +10,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    private long id;
+    private int id;
     private String userCode;
     private String userName;
     private String userPassword;
