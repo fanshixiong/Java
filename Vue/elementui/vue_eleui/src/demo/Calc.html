@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计数器</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <h2>当前计数：{{cnt}}</h2>
+    <button @click="add">+</button>
+    <button @click="sub">-</button>
+
+</div>
+
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            cnt: 0,
+        },
+        methods: {
+            add: function () {
+                this.cnt++;
+            },
+            sub: function () {
+                this.cnt--;
+            }
+        }
+    })
+</script>
+</body>
+</html>
