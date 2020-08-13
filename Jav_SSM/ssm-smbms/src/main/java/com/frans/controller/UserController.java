@@ -100,4 +100,8 @@ public class UserController {
         return "redirect:../login.jsp";
     }
 
+    @RequestMapping("/management.do")
+    public String manage(){
+        return "";
+    }
 }

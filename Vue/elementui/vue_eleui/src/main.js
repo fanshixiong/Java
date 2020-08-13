@@ -10,6 +10,11 @@ import ElementUI from "element-ui"
 //导入element css
 import 'element-ui/lib/theme-chalk/index.css'
 
+import axios from 'axios';
+import Vueaxios from 'vue-axios';
+
+
+Vue.use(Vueaxios, axios);
 Vue.use(router)
 Vue.use(ElementUI)
 
