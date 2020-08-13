@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind使用</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    {{message}}
+    <img :src="imgURL" alt="">图片
+</div>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊',
+            imgURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc_cvnYFfNkEKLBvulzzbC9NRdwAhU_HK-6rmDC_Q1dPKWPNc&s',
+        },
+    })
+</script>
+</body>
+</html>
