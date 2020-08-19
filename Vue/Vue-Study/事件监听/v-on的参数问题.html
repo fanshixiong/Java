@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    {{message}}
+    <!--获取浏览器参数的event对象：$event-->
+    <button @click="btnClick(123, $event)">1</button>
+    <button>2</button>
+</div>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊',
+        },
+        methods: {
+            btnClick(event) {
+                console.log("------" + event);
+            }
+            btn2Click(abc, event) {
+                console.log("++++++++++" + abc, event);
+            }
+        },
+    })
+</script>
+</body>
+</html>
