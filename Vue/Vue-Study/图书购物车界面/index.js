@@ -50,6 +50,12 @@ const app = new Vue({
                 totalPrice += (this.books[i].price * this.books[i].count);
             }
             return totalPrice;
+        },
+
+        totalPrices(){
+            return this.books.reduce((pre, cur) => {
+                return pre+ cur.price*cur.count;
+            }, 0);
         }
     },
     filters: {
