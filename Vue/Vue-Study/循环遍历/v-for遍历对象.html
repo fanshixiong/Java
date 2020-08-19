@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    {{message}}
+    <ul>
+        <li v-for="(item, key) in info">
+            {{key}} : {{item}}
+        </li>
+    </ul>
+</div>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊',
+            info: {
+                name: 'frans',
+                age: 19,
+                height: 1.99,
+            },
+        },
+    })
+</script>
+</body>
+</html>

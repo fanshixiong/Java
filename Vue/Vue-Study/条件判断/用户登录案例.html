@@ -8,13 +8,15 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <div id="app">
+    <!--vue处于性能考虑，复用已经存在的元素，所以会出现之前输入的内容
+    结局办法：key不同即可-->
     <span v-if="isUser">
         <label for="username">用户账号</label>
-        <input type="text" id="username" placeholder="用户账号">
+        <input type="text" id="username" placeholder="用户账号" key="username">
     </span>
     <span v-else>
         <label for="email">用户邮箱</label>
-        <input type="text" id="email" placeholder="用户邮箱">
+        <input type="text" id="email" placeholder="用户邮箱" key="email">
     </span>
     <button @click="isUser = !isUser">切换类型</button>
 </div>

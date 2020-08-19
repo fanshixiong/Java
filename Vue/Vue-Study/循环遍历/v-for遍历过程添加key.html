@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id = "app">
+    {{message}}
+
+    <ul>
+        <li v-for="item in letters" :key=""item>{{item}}</li>
+        <button @click="btnClick">haha</button>
+    </ul>
+</div>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊',
+            letters:['1', '2',' a', 'd', 's'],
+        },
+        methods:{
+            btnClick(){
+                this.letters.unshift();
+                this.letters.splice();
+                //Vue.set(要修改的对象，索引值，修改后的值)
+                Vue.set(this.letters, 0, 'frans');
+            }
+        }
+    })
+</script>
+</body>
+</html>
