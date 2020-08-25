@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    {{message}}
+    <my-cpn1></my-cpn1>
+    <my-cpn></my-cpn>
+</div>
+<script>
+    /*    const cpnC = Vue.extend({
+            template: `
+                <div>
+                <h2> frans </h2>
+                <h4> frans4 </h4>
+                </div> `
+        });*/
+    // 注册组件
+    Vue.component('my-cpn1', {
+        template: `
+            <div>
+            <h2> frans </h2>
+            <h4> frans4 </h4>
+            </div> `
+    });
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊',
+        },
+        components: {
+            'my-cpn': {
+                template: `
+                <div>
+                <h2> frans </h2>
+                <h4> frans4 </h4>
+                </div> `
+            },
+        }
+    })
+</script>
+</body>
+</html>
