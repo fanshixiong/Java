@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-slot="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <cpn></cpn>
+    <cpn>
+        <!--已废弃-->
+        <!--已废弃-->
+        <!--已废弃-->
+        <template slot-scope="slot1">
+            <!-- <span v-for="item in slot1.data">
+                 {{item.join('-')}}
+             </span>-->
+            <span>{{slot1.data.join('-')}}</span>
+        </template>
+    </cpn>
+    <cpn>
+        <template v-slot:default="slot1">
+            {{slot1.data.join(' * ')}}
+        </template>
+    </cpn>
+</div>
+<template id="cpn">
+    <div>
+        <slot :data="pLanguage">
+            <ul>
+                <li v-for="item in pLanguage">{{item}}</li>
+            </ul>
+        </slot>
+    </div>
+</template>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {},
+        methods: {},
+        components: {
+            cpn: {
+                template: '#cpn',
+                data() {
+                    return {
+                        pLanguage: ['Java', 'C++', 'C', 'Python', "PHP", "JavaScript"],
+                    }
+                }
+            }
+        },
+    })
+</script>
+</body>
+</html>
