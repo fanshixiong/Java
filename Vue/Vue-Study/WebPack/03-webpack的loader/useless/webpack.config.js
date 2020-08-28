@@ -1,13 +1,19 @@
 const path = require('path')
+const webpack = require('webpack')
+const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: 'dist/'
+        // publicPath: 'dist/'
     },
     module: {
         rules: [
+            {
+                test: /\.vue$/,
+                use: ['vue-loader'],
+            },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
@@ -42,7 +48,24 @@ module.exports = {
                         options: {}
                     }
                 ]
-            }
+            },
+
         ]
+    },
+    resolve: {
+        extensions: ['.js', '.vue', '.css'],
+        alias: {
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    },
+    plugins: [
+        new webpack.BannerPlugin('frans'),
+        new htmlWebpackPlugin({
+            template: 'template.html',
+        }),
+    ],
+    devServer: {
+        contentBase: './dist',
+        inline: true,
     }
 }
