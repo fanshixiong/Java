@@ -289,11 +289,11 @@ const router = new Router({
 
 4. `active-class`属性：当`<router-link>`对应的路由匹配成功的时候，会自动给当前元素设置一个`router-link-active`的class，设置active-class可以修改默认的名称。
 - 在进行高亮显示的导航菜单或者底部tabbar时，会用到该属性
-   
+  
 - 但是通常不会修改类的属性，会直接使用默认的`router-link-active`
-   
+  
 - `<router-link to='/home' tag='button' active-class='active'>`此时被选中的`<router-link>`就会有active的class。
-   
+  
 - 如果每个`<router-link>`都要加上`active-class='active'`，那就在路由里面统一更改。
 
 
@@ -1273,6 +1273,8 @@ export default {
    > TarBar.vue
 
    ```vue
+   
+   ```
 <template>
        <div id="tab-bar">
          <!-- 插槽代替tabbaritem -->
@@ -1288,12 +1290,12 @@ export default {
      #tab-bar {
        display: flex;
        background-color: #f6f6f6;
-   
+
        position: fixed;
        left: 0;
        right: 0;
        bottom: 0;
-   
+       
        box-shadow: 0 -1px  1px rgba(100, 100, 100, .2);
      }
    </style>
@@ -1303,7 +1305,7 @@ TabBar弄一个slot插槽用于插入TabBarItem组件（可能插入多个）.
 
 > TabBarItem.vue
 
-```vue
+​```vue
 <template>
     <div class="tab-bar-item">
       <!-- item-icon表示图片插槽 item-text表示文字插槽，例如首页 -->
@@ -1331,7 +1333,7 @@ TabBar弄一个slot插槽用于插入TabBarItem组件（可能插入多个）.
     margin-bottom: 2px;
   }
 </style>
-```
+   ```
 
 TabBarItem组件中插入2个插槽一个用于插入图片一个用于插入文字。
 
@@ -1624,3 +1626,4 @@ TabBarItem组件中插入2个插槽一个用于插入图片一个用于插入文
 
 
 
+​	

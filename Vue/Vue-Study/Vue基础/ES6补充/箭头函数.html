@@ -5,18 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-<div id = "app">
-    {{message}}
-</div>
 <script>
-    const app = new Vue({
-        el: '#app',
-        data: {
-            message: '你好啊',
-        },
-    })
+    const sum = (num1, num2) => {
+            return num1 + num2
+    }
+
+    const sum1 = num1 =>{
+        return num1 * num1;
+    }
+
+    const test = ()=>{
+        console.log("Hello World");
+    }
+
+    const mul = (num1, num2) => num1 + num2
+    console.log(mul(20, 50));
+
 </script>
 </body>
 </html>
