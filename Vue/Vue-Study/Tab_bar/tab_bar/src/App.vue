@@ -1,20 +1,71 @@
 <template>
   <div id="app">
-    <div id="tab-bar">
-      <div class="tab-bar-item">首页</div>
-      <div class="tab-bar-item">分类</div>
-      <div class="tab-bar-item">购物车</div>
-      <div class="tab-bar-item">我的</div>
-    </div>
+    <tab-bar>
+      <tab-bar-item>
+        <template v-slot:item-icon>
+          <img src="./assets/img/tabbar/home.png" alt="" srcset="">
+          <img src="./assets/img/tabbar/home_active.png" alt="" srcset="">
+        </template>
+        <template v-slot:item-icon-active>
+          <img src="./assets/img/tabbar/home_active.png" alt="" srcset="">
+        </template>
+        <template v-slot:item-text>
+          <div>首页</div>
+        </template>
+      </tab-bar-item>
+      <tab-bar-item>
+        <template v-slot:item-icon>
+          <img src="./assets/img/tabbar/categories.png" alt="" srcset="">
+          <img src="./assets/img/tabbar/categories_active.png" alt="" srcset="">
+        </template>
+        <template v-slot:item-icon-active>
+          <img src="./assets/img/tabbar/categories_active.png" alt="" srcset="">
+        </template>
+        <template v-slot:item-text>
+          <div>分类</div>
+        </template>
+      </tab-bar-item>
+      <tab-bar-item>
+        <template v-slot:item-icon>
+          <img src="./assets/img/tabbar/shopcart.png" alt="" srcset="">
+          <img src="./assets/img/tabbar/shopcart_active.png" alt="" srcset="">
+        </template>
+        <template v-slot:item-icon-active>
+          <img src="./assets/img/tabbar/shopcart_active.png" alt="" srcset="">
+        </template>
+        <template v-slot:item-text>
+          <div>购物车</div>
+        </template>
+      </tab-bar-item>
+      <tab-bar-item>
+        <template v-slot:item-icon>
+          <img src="./assets/img/tabbar/profile.png" alt="" srcset="">
+          <img src="./assets/img/tabbar/profile_active.png" alt="" srcset="">
+        </template>
+        <template v-slot:item-icon-active>
+          <img src="./assets/img/tabbar/profile_active.png" alt="" srcset="">
+        </template>
+        <template v-slot:item-text>
+          <div>我的</div>
+        </template>
+      </tab-bar-item>
+    </tab-bar>
   </div>
 </template>
 <script>
+import TabBar from './components/tabbar/TabBar'
+import TabBarItem from './components/tabbar/TabBarItem'
+
 export default {
   name: 'App',
   data () {
     return {
 
     }
+  },
+  components: {
+    TabBar,
+    TabBarItem
   },
   methods: {
 
@@ -24,20 +75,4 @@ export default {
 <style>
   @import './assets/css/base.css';
 
-  #tab-bar{
-    display: flex;
-    background-color: #f6f6f6;
-
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    box-shadow: 0px -1px 1px rgba(100, 100, 100, .2);
-  }
-  .tab-bar-item {
-    flex: 1;
-    text-align: center;
-    height: 49px;
-  }
 </style>
