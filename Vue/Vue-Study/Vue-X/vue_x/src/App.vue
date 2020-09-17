@@ -15,7 +15,14 @@
     <hello-vuex :counter="counter"/>
 
     <h2>--------------action-----------------</h2>
-    <button @click="change"></button>
+    <button @click="change">change</button>
+    <h2>{{$store.state.user}}</h2>
+
+    <h2>----------------modules----------------</h2>
+    <h2>{{$store.state.a.name}}</h2>
+    <button @click="test">test</button>
+    <h2>{{$store.state.a.count}}</h2>
+    <h2>{{$store.state.count}}</h2>
   </div>
 </template>
 <script>
@@ -48,8 +55,19 @@ export default {
       const stu = { id: 115, name: 'alan', age: 36 }
       this.$store.commit('addStu', stu)
     },
+    /*
     change () {
       this.$store.dispatch('aUpdateInfo', 'ffrans')
+    }
+    */
+    change () {
+      this.$store.dispatch('aUpdateInfo', 'frans4x').then(res => {
+        console.log('success')
+        console.log(res)
+      })
+    },
+    test () {
+      this.$store.dispatch('incrementIfOddOnRootSum')
     }
   },
   computed: {
