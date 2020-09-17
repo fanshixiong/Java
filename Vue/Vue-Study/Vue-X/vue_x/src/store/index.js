@@ -8,7 +8,8 @@ export default createStore({
       { id: 111, name: 'ttt', age: '20' },
       { id: 112, name: 'yyy', age: '22' },
       { id: 113, name: 'zty', age: '25' }
-    ]
+    ],
+    user: {id: 110, name: 'frans', age: '18' }
   },
   mutations: {
     increment (state) {
@@ -22,9 +23,18 @@ export default createStore({
     },
     addStu (state, stu) {
       state.students.push(stu)
+    },
+    updateName (state, name) {
+      state.user.name = name
     }
   },
   actions: {
+    // context：上下文
+    aUpdateInfo (context, name) {
+      setTimeout(() => {
+        context.commit('updateName', 12)
+      }, 1000)
+    }
   },
   getters: {
     powerCounter (state) {

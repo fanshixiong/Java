@@ -13,6 +13,9 @@
     <h2>{{$store.getters.getStudentCounts}}</h2>
     <h2>{{$store.getters.moreAgeStu(18)}}</h2>
     <hello-vuex :counter="counter"/>
+
+    <h2>--------------action-----------------</h2>
+    <button @click="change"></button>
   </div>
 </template>
 <script>
@@ -44,6 +47,9 @@ export default {
     addStu () {
       const stu = { id: 115, name: 'alan', age: 36 }
       this.$store.commit('addStu', stu)
+    },
+    change () {
+      this.$store.dispatch('aUpdateInfo', 'ffrans')
     }
   },
   computed: {
