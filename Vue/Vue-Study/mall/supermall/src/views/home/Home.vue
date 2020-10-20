@@ -12,14 +12,15 @@
 </template>
 
 <script>
+// <!--封装的子组件-->
 import HomeSwiper from './childComps/HomeSwiper'
 import RecommendView from './childComps/RecommendView'
 import FeatureView from './childComps/FeatureView'
-
+// 公共组件
 import NavBar from 'components/common/navbar/NavBar'
 import TabControl from 'components/content/tabControl/TabControl'
-
-import { getHomeMultidata } from 'network/home'
+// 工具函数
+import { getHomeMultidata, getHomeGoods } from 'network/home'
 
 export default {
   name: 'Home',
@@ -41,11 +42,33 @@ export default {
       }
     }
   },
-  created () {
-    getHomeMultidata().then(res => {
-      this.banners = res.data.banner
-      this.recommends = res.data.recommend
-    })
+  methods: {
+    /**
+     * 网络请求相关的方法
+     */
+    getHomeMultidata() {
+      getHomeMultidata().then(res => {
+        this.banners = res.data.banner
+        this.recommends = res.data.recommend
+      })
+    },
+    getHomeGoods(type){
+      const page = this.goods[type].page + 1
+      getHomeGoods(type, page).then(res => {
+        this.goods[type].list.push(...res.data.list)
+        this.goods[type].page += 1
+      })
+    }
+  },
+  //组件创建好就请求数据
+  created() {
+    //1、请求多个数据
+    this.getHomeMultidata();
+
+    //2、请求商品数据
+    this.getHomeGoods('pop');
+    this.getHomeGoods('new');
+    this.getHomeGoods('sell');
   }
 }
 </script>
