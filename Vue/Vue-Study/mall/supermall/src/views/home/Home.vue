@@ -7,6 +7,7 @@
     <recommend-view :recommends = "recommends"/>
     <feature-view/>
     <tab-control class="tab-control" :titles="[`流行`,`新款`,`精选`]" />
+    <goods-list :goods="goods['pop'].list"/>
 
   </div>
 </template>
@@ -19,6 +20,7 @@ import FeatureView from './childComps/FeatureView'
 // 公共组件
 import NavBar from 'components/common/navbar/NavBar'
 import TabControl from 'components/content/tabControl/TabControl'
+import GoodsList from 'components/content/goods/GoodsList'
 // 工具函数
 import { getHomeMultidata, getHomeGoods } from 'network/home'
 
@@ -29,16 +31,17 @@ export default {
     HomeSwiper,
     RecommendView,
     FeatureView,
-    TabControl
+    TabControl,
+    GoodsList
   },
   data () {
     return {
       banners: [],
       recommends: [],
       goods: {
-        'pop': {page: 0, list: []},
-        'news': {page: 0, list: []},
-        'sell': {page: 0, list: []}
+        pop: { page: 0, list: [] },
+        new: { page: 0, list: [] },
+        sell: { page: 0, list: [] }
       }
     }
   },
@@ -46,13 +49,13 @@ export default {
     /**
      * 网络请求相关的方法
      */
-    getHomeMultidata() {
+    getHomeMultidata () {
       getHomeMultidata().then(res => {
         this.banners = res.data.banner
         this.recommends = res.data.recommend
       })
     },
-    getHomeGoods(type){
+    getHomeGoods (type) {
       const page = this.goods[type].page + 1
       getHomeGoods(type, page).then(res => {
         this.goods[type].list.push(...res.data.list)
@@ -60,15 +63,15 @@ export default {
       })
     }
   },
-  //组件创建好就请求数据
-  created() {
-    //1、请求多个数据
-    this.getHomeMultidata();
+  // 组件创建好就请求数据
+  created () {
+    // 1、请求多个数据
+    this.getHomeMultidata()
 
-    //2、请求商品数据
-    this.getHomeGoods('pop');
-    this.getHomeGoods('new');
-    this.getHomeGoods('sell');
+    // 2、请求商品数据
+    this.getHomeGoods('pop')
+    this.getHomeGoods('new')
+    this.getHomeGoods('sell')
   }
 }
 </script>

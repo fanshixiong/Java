@@ -1,10 +1,10 @@
-import {request} from "./request";
+import { request } from "./request";
 
 /**
  * 请求轮播图、推荐相关的数据
  * @returns {*}
  */
-export function getHomeMultidata() {
+export function getHomeMultidata () {
   return request({
     url: '/home/multidata'
   })
@@ -16,7 +16,7 @@ export function getHomeMultidata() {
  * @param page
  * @returns {*}
  */
-export function getHomeGoods(type, page) {
+export function getHomeGoods (type, page) {
   return request({
     url: '/home/data',
     params:{
