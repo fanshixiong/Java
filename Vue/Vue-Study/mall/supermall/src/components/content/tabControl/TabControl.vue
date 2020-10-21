@@ -27,6 +27,8 @@ export default {
   methods: {
     itemClick (index) {
       this.currentIndex = index
+      // 将点击的元素下标传回父组件
+      this.$emit('tabclick', index)
     }
   }
 }
