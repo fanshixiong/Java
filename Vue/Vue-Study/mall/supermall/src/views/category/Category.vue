@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" ref="aaa">
     <ul class="content">
       <li>10001</li>
       <li>10002</li>
@@ -1026,5 +1026,9 @@ export default {
 .wrapper{
   height: 150px;
   background-color: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  //overflow: hidden;
 }
 </style>
