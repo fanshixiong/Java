@@ -1016,7 +1016,15 @@ export default {
   },
   mounted () {
     this.scroll = new BScroll(document.querySelector('.wrapper'), {
-
+      probeType: 3,
+      click: true,
+      pullUpLoad: true
+    })
+    this.scroll.on('scroll', (position) => {
+      console.log(position)
+    })
+    this.scroll.on('pullUpLoad', () => {
+      console.log('上拉加载更多')
     })
   }
 }
@@ -1029,6 +1037,6 @@ export default {
   position: absolute;
   left: 0;
   top: 0;
-  //overflow: hidden;
+  overflow: hidden;
 }
 </style>
