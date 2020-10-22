@@ -38,13 +38,13 @@ export default {
       probeType: this.probeType,
       pullUpLoad: {
         boolean: this.pullUpLoad,
-        //设置上拉多大距离才能触发方法
+        // 设置上拉多大距离才能触发方法
         threshold: -100
       },
       pullDownRefresh: {
         boolean: this.pullDownRefresh,
         threshold: 40,
-        //刷新数据的过程中，回弹停留在距离顶部还有40px的位置
+        // 刷新数据的过程中，回弹停留在距离顶部还有40px的位置
         stop: this.pullDownRefreshStop
       },
       click: true
