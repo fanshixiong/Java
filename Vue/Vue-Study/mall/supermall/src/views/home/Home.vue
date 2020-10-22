@@ -3,12 +3,13 @@
     <nav-bar class="home-nav">
       <template v-slot:center><div>购物街</div></template>
     </nav-bar>
-    <home-swiper :banners="banners"/>
-    <recommend-view :recommends = "recommends"/>
-    <feature-view/>
-    <tab-control class="tab-control" :titles="[`流行`,`新款`,`精选`]" @tabclick="tabclick"/>
-    <goods-list :goods="showGoods"/>
-
+    <scroll class="content">
+      <home-swiper :banners="banners"/>
+      <recommend-view :recommends = "recommends"/>
+      <feature-view/>
+      <tab-control class="tab-control" :titles="[`流行`,`新款`,`精选`]" @tabclick="tabclick"/>
+      <goods-list :goods="showGoods"/>
+    </scroll>
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import FeatureView from './childComps/FeatureView'
 import NavBar from 'components/common/navbar/NavBar'
 import TabControl from 'components/content/tabControl/TabControl'
 import GoodsList from 'components/content/goods/GoodsList'
+import Scroll from 'components/common/scroll/Scroll'
 // 工具函数
 import { getHomeMultidata, getHomeGoods } from 'network/home'
 
@@ -32,7 +34,8 @@ export default {
     RecommendView,
     FeatureView,
     TabControl,
-    GoodsList
+    GoodsList,
+    Scroll
   },
   data () {
     return {
@@ -91,24 +94,18 @@ export default {
 </script>
 
 <style scoped>
-#home{
-  padding-top: 44px;
+#home {
+  margin-bottom: 49px;
+  overflow: hidden;
 }
-.home-nav{
-  background-color: var(--color-tint);
-  color: white;
 
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 9;
+.home-nav-bar {
+  color: white;
+  background-color: var(--color-tint);
 }
 
 .tab-control {
-  /*position: relative;*/
-  position: sticky;
-  top: 44px;
+  position: relative;
   z-index: 9;
 }
 
@@ -116,5 +113,21 @@ export default {
   position: fixed;
   margin-top: -1px;
   width: 100%;
+}
+
+.content {
+  position: relative;
+  height: calc(100vh - 93px);
+  overflow: hidden;
+}
+
+.refreshMsg {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: oblique;
 }
 </style>
