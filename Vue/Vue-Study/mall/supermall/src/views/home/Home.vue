@@ -3,13 +3,14 @@
     <nav-bar class="home-nav">
       <template v-slot:center><div>购物街</div></template>
     </nav-bar>
-    <scroll class="content">
+    <scroll class="content" ref="scroll">
       <home-swiper :banners="banners"/>
       <recommend-view :recommends = "recommends"/>
       <feature-view/>
       <tab-control class="tab-control" :titles="[`流行`,`新款`,`精选`]" @tabclick="tabclick"/>
       <goods-list :goods="showGoods"/>
     </scroll>
+
     <ul>
       <li>10001</li>
       <li>10002</li>
@@ -1012,6 +1013,7 @@
       <li>1000999</li>
       <li>10001000</li>
     </ul>
+    <back-top @click = "backClick"/>
   </div>
 </template>
 
@@ -1025,6 +1027,7 @@ import NavBar from 'components/common/navbar/NavBar'
 import TabControl from 'components/content/tabControl/TabControl'
 import GoodsList from 'components/content/goods/GoodsList'
 import Scroll from 'components/common/scroll/Scroll'
+import BackTop from 'components/common/backTop/BackTop'
 // 工具函数
 import { getHomeMultidata, getHomeGoods } from 'network/home'
 
@@ -1037,7 +1040,8 @@ export default {
     FeatureView,
     TabControl,
     GoodsList,
-    Scroll
+    Scroll,
+    BackTop
   },
   data () {
     return {
@@ -1064,6 +1068,10 @@ export default {
     tabclick (index) {
       console.log(index)
       this.currentType = Object.keys(this.goods)[index]
+    },
+    backClick () {
+      this.$refs.scroll.scroll.scrollTo(0, 0)
+      this.$refs.scroll.scrollTo(0, 0)
     },
     /**
      * 网络请求相关的方法
