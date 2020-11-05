@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c335c5b-44ca-4d13-bd96-64b2fe34c8ae" name="Default Changelist" comment="" />
+    <list default="true" id="0c335c5b-44ca-4d13-bd96-64b2fe34c8ae" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../my_smbms/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my_smbms/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssm-smbms/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssm-smbms/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssmbuild/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssmbuild/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/dataSources/7ab7daab-ed8e-4bfc-a7ec-45ffe499734b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/dataSources/7ab7daab-ed8e-4bfc-a7ec-45ffe499734b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +99,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542437833660" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Vue/vue-one" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jav_Web/javaweb-smbms" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -144,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+    <configuration default="true" type="JetRunConfigurationType">
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -157,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -408,6 +415,9 @@
       <workItem from="1596687406272" duration="37000" />
       <workItem from="1596687479323" duration="172000" />
       <workItem from="1596688153639" duration="597000" />
+      <workItem from="1604304942337" duration="1278000" />
+      <workItem from="1604316339335" duration="16000" />
+      <workItem from="1604316586641" duration="3876000" />
     </task>
     <servers />
   </component>

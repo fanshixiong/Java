@@ -22,7 +22,7 @@
         <center>
             <h3>Login</h3>
         </center>
-        <form action="${pageContext.request.contextPath }/login.do" method="post">
+        <form action="${pageContext.request.contextPath}/login.do" method="post">
             <div class="form-group">
                 <label for="userCode">用户名:</label>
                 <input type="text" class="form-control" style="color:red;" placeholder="请输入用户名" id="userCode" name="userCode" >

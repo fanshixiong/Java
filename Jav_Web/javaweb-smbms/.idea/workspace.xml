@@ -7,8 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7f7283c-7df9-4ab5-bcd1-d13d50849ca2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/my_smbms/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/my_smbms/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/.idea/dataSources/428d6557-a6fd-41d5-8390-f66da463e2cd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/.idea/dataSources/428d6557-a6fd-41d5-8390-f66da463e2cd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/smbms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/smbms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/ssm-smbms/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/ssm-smbms/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Jav_SSM/ssmbuild/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Jav_SSM/ssmbuild/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7ab7daab-ed8e-4bfc-a7ec-45ffe499734b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7ab7daab-ed8e-4bfc-a7ec-45ffe499734b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19170333 项目报告.docx" beforeDir="false" afterPath="$PROJECT_DIR$/19170333 项目报告.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +95,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Jav_SSM/smbms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -284,6 +291,11 @@
       <workItem from="1595672809080" duration="9374000" />
       <workItem from="1595740074974" duration="11906000" />
       <workItem from="1595905796944" duration="3028000" />
+      <workItem from="1604303427019" duration="2688000" />
+      <workItem from="1604316242970" duration="95000" />
+      <workItem from="1604319810183" duration="41000" />
+      <workItem from="1604322994667" duration="33000" />
+      <workItem from="1604323305975" duration="1853000" />
     </task>
     <servers />
   </component>
