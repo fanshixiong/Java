@@ -96,6 +96,11 @@ export default {
     // 3、获取当前的Y值
     getScrollY () {
       return this.scroll ? this.scroll.y : 0
+    },
+
+    // 4、完成上拉加载更多
+    finishPullUp () {
+      this.scroll && this.scroll.finishPullUp()
     }
   }
 }

@@ -173,6 +173,15 @@ export default {
      * 事件监听相关方法
      *
      * */
+    debounce (func, delay) {
+      let timer = null
+      return function (...args) {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          func.apply(this, args)
+        }, delay)
+      }
+    },
     tabclick (index) {
       console.log(index)
       this.currentType = Object.keys(this.goods)[index]
@@ -202,6 +211,9 @@ export default {
       getHomeGoods(type, page).then(res => {
         this.goods[type].list.push(...res.data.list)
         this.goods[type].page += 1
+
+        // 完成上拉加载更多
+        this.$refs.scroll.finishPullUp()
       })
     }
   },
@@ -214,10 +226,12 @@ export default {
     this.getHomeGoods('pop')
     this.getHomeGoods('new')
     this.getHomeGoods('sell')
-
-    // 3.监听item中图片加载完成
+  },
+  mounted () {
+    // 监听item中图片加载完成
+    const refresh = this.debounce(this.$refs.scroll.refresh(), 50)
     this.$bus.$on('imgloadrefresh', () => {
-      this.$refs.scroll.refresh()
+      refresh()
     })
   }
 }
