@@ -3,6 +3,8 @@
     <nav-bar class="home-nav">
       <template v-slot:center><div>购物街</div></template>
     </nav-bar>
+    <tab-control v-show="isTabFixed" class="tab-control tab-control2"
+                 :titles="[`流行`,`新款`,`精选`]" @tabclick="tabClick" ref="tabControl1"/>
     <scroll class="content"
             ref="scroll"
             :probe-type="3"
@@ -11,10 +13,11 @@
             @pullingup = "loadMore"
             @pullingdown="homePullingDown"
             :pull-down-refresh=true>
-      <home-swiper :banners="banners"/>
+      <home-swiper :banners="banners" @swiperimgload="swiperImgLoad"/>
       <recommend-view :recommends = "recommends"/>
       <feature-view/>
-      <tab-control class="tab-control" :titles="[`流行`,`新款`,`精选`]" @tabclick="tabclick"/>
+      <tab-control class="tab-control"
+                   :titles="[`流行`,`新款`,`精选`]" @tabclick="tabClick" ref="tabControl2"/>
       <goods-list :goods="showGoods"/>
       <ul>
         <li>pic1</li>
@@ -137,6 +140,7 @@ import Scroll from 'components/common/scroll/Scroll'
 import BackTop from 'components/common/backTop/BackTop'
 // 工具函数
 import { getHomeMultidata, getHomeGoods } from 'network/home'
+import { TOP_DISTANCE } from 'common/const'
 
 export default {
   name: 'Home',
@@ -160,7 +164,9 @@ export default {
         sell: { page: 0, list: [] }
       },
       currentType: 'pop',
-      isShowBackTop: false
+      isShowBackTop: false,
+      tabOffsetTop: 0,
+      isTabFixed: false
     }
   },
   computed: {
@@ -182,20 +188,43 @@ export default {
         }, delay)
       }
     },
-    tabclick (index) {
+    tabClick (index) {
       console.log(index)
       this.currentType = Object.keys(this.goods)[index]
+
+      this.$refs.tabControl1.currentIndex = index
+      this.$refs.tabControl2.currentIndex = index
     },
     backClick () {
       // this.$refs.scroll.scroll.scrollTo(0, 0)
       this.$refs.scroll.scrollTo(0, 0)
     },
     contentScroll (position) {
-      this.isShowBackTop = -position.y > 1000
+      // 2)、监听BackTop是否显示
+      this.isShowBackTop = position.y < -TOP_DISTANCE
+
+      // 3)、判断tabControl是否需要吸顶显示
+      this.isTabFixed = this.tabOffsetTop <= (-position.y)
     },
     loadMore () {
       console.log('上拉加载更多')
       this.getHomeGoods(this.currentType)
+    },
+    // 4、监听下拉事件（使用scroll组件传过来的事件）
+    homePullingDown () {
+      this.msg = '刷新中......'
+      setTimeout(() => {
+        this.msg = '刷新成功✔'
+        // location.reload();
+        window.location.href = 'http://app.huaxin.press'
+      }, 500)
+    },
+    // 5、获取tabControl组件距离顶部的距离,所有的组件都有一个$el属性，用于拿到组件中的元素
+    // 需要监听上半部分的图片加载完成
+    swiperImgLoad () {
+      // mixin中的防抖
+      this.mixinRefresh()
+      this.tabOffsetTop = this.$refs.tabControl2.$el.offsetTop
     },
     /**
      * 网络请求相关的方法
@@ -233,6 +262,10 @@ export default {
     this.$bus.$on('imgloadrefresh', () => {
       refresh()
     })
+
+    // 2. 获取tabControl的offsetTop
+    // 所有的组件都有一个属性$el: 用于获取组件中的元素
+    this.tabOffsetTop = this.$refs.tabControl2.$el.offsetTop
   }
 }
 </script>
