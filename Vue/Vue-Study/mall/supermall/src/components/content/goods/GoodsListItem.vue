@@ -10,11 +10,12 @@
 </template>
 
 <script>
+import bus from '@/eventBus'
 export default {
   name: 'GoodsListItem',
   methods: {
     imgLoad () {
-      this.$bus.$emit('imgloadrefresh')
+      bus.$emit('imgloadrefresh')
     }
   }
 }

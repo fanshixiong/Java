@@ -55,13 +55,13 @@ export default {
     // 2、监听滚动的位置
     if (this.probeType === 2 || this.probeType === 3) {
       this.scroll.on('scroll', position => {
-        // console.log(position)
         this.$emit('scroll', position)
       })
     }
+
     // 3、监听上拉事件
     if (this.pullUpLoad) {
-      this.scroll.on('pullingUp', () => {
+      this.scroll.on('pullingup', () => {
         this.$emit('pullingup')
         setTimeout(() => {
           // 必须调用此方法才可以进行下次上拉,1.5秒可以拉取一次
@@ -72,7 +72,7 @@ export default {
 
     // 4、监听下拉事件
     if (this.pullDownRefresh) {
-      this.scroll.on('pullingDown', () => {
+      this.scroll.on('pullingdown', () => {
         this.$emit('pullingdown')
         setTimeout(() => {
           // 必须调用此方法才可以进行下次上拉
@@ -96,11 +96,6 @@ export default {
     // 3、获取当前的Y值
     getScrollY () {
       return this.scroll ? this.scroll.y : 0
-    },
-
-    // 4、完成上拉加载更多
-    finishPullUp () {
-      this.scroll && this.scroll.finishPullUp()
     }
   }
 }
