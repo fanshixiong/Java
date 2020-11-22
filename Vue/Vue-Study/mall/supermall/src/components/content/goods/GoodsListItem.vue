@@ -1,6 +1,6 @@
 <template>
   <div id="goods-list-item">
-    <img :src="goodsItem.show.img" alt="" @load="imgLoad">
+    <img v-lazy="showImage" alt="" @load="imgLoad">
     <div class="goods-info">
       <p>{{goodsItem.title}}</p>
       <span class="price">{{goodsItem.price}}</span>
@@ -10,12 +10,25 @@
 </template>
 
 <script>
-import bus from '@/eventBus'
 export default {
   name: 'GoodsListItem',
+  props: {
+    goodsItem: {
+      type: Object,
+      default () {
+        return null
+      }
+    }
+  },
   methods: {
     imgLoad () {
-      bus.$emit('imgloadrefresh')
+      this.$bus.emit('imgloadrefresh')
+    },
+    computed: {
+      // 根据服务器传过来的数据寻找图片显示
+      showImage () {
+        return this.goodsItem.img || this.goodsItem.image || this.goodsItem.show.img
+      }
     }
   }
 }

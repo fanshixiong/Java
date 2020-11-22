@@ -61,7 +61,7 @@ export default {
 
     // 3、监听上拉事件
     if (this.pullUpLoad) {
-      this.scroll.on('pullingup', () => {
+      this.scroll.on('pullingUp', () => {
         this.$emit('pullingup')
         setTimeout(() => {
           // 必须调用此方法才可以进行下次上拉,1.5秒可以拉取一次
@@ -72,7 +72,7 @@ export default {
 
     // 4、监听下拉事件
     if (this.pullDownRefresh) {
-      this.scroll.on('pullingdown', () => {
+      this.scroll.on('pullingDown', () => {
         this.$emit('pullingdown')
         setTimeout(() => {
           // 必须调用此方法才可以进行下次上拉

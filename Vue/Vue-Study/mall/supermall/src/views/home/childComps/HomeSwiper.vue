@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     swiperLoad () {
-      this.$emit("swiperimgload");
+      this.$emit('swiperimgload')
     }
   }
 }

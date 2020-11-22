@@ -42,7 +42,7 @@ import BackTop from 'components/common/backTop/BackTop'
 // 工具函数
 import { getHomeMultidata, getHomeGoods } from 'network/home'
 import { TOP_DISTANCE } from 'common/const'
-import bus from '@/eventBus'
+import { debounce } from 'common/utils'
 
 export default {
   name: 'Home',
@@ -65,12 +65,14 @@ export default {
         new: { page: 0, list: [] },
         sell: { page: 0, list: [] }
       },
+      currentType: 'pop',
       msg: '↓下拉刷新',
       isMsg: true,
       isShowRefreshMsg: true,
       tabOffsetTop: 0,
       isTabFixed: false,
-      saveY: 0
+      saveY: 0,
+      isShowBackTop: false
     }
   },
   computed: {
@@ -84,13 +86,27 @@ export default {
      */
 
     // 1、监听tabControl的点击,mixin里的tabClick发生点击事件并调用此方法
-    _tabClick (index) {
+    tabClick (index) {
+      switch (index) {
+        case 0:
+          this.currentType = 'pop'
+          break
+        case 1:
+          this.currentType = 'new'
+          break
+        case 2:
+          this.currentType = 'sell'
+          break
+      }
       this.$refs.tabControl1.currentIndex = index
       this.$refs.tabControl2.currentIndex = index
     },
 
+    backClick () {
+      this.$refs.scroll.scrollTo(0, 0, 500)
+    },
     // 2、监听滚动的位置（使用scroll组件传过来的事件）
-    ContentScroll (position) {
+    contentScroll (position) {
       // 1)、改变上拉刷新时的文字
       if (this.isMsg && position.y > 40) {
         this.isMsg = false
@@ -128,9 +144,7 @@ export default {
     // 5、获取tabControl组件距离顶部的距离,所有的组件都有一个$el属性，用于拿到组件中的元素
     // 需要监听上半部分的图片加载完成
     swiperImgLoad () {
-      // mixin中的防抖
-      this.mixinRefresh()
-      this.tabOffsetTop = this.$refs.tabControl2.$el.offsetTop
+      this.tabOffsetTop = this.$refs.tabcontrol2.$el.offsetTop
     },
 
     /**
@@ -138,6 +152,7 @@ export default {
      */
     getHomeMultidata () {
       // 1、请求多个数据
+      console.log('getHomeMultidata')
       getHomeMultidata().then(res => {
         this.banners = res.data.banner.list
         this.recommends = res.data.recommend.list
@@ -145,12 +160,20 @@ export default {
     },
     getHomeGoods (type) {
       // 2、请求商品数据
+      console.log('getHomeGoods')
       const page = this.goods[type].page + 1
       getHomeGoods(type, page).then(res => {
         this.goods[type].list.push(...res.data.list)
         this.goods[type].page += 1
       })
     }
+  },
+  mounted () {
+    // 1.图片加载的事件监听和防抖函数
+    const refresh = debounce(this.$refs.scroll.refresh)
+    this.$bus.on('itemimageload', () => {
+      refresh()
+    })
   },
   // 组件创建好就请求数据
   created () {
@@ -175,7 +198,7 @@ export default {
     this.saveY = this.$refs.scroll.getScrollY()
 
     // 2、取消全局事件的监听
-    bus.$off('itemImageLoad', this.itemImgListener)
+    this.$bus.off('itemImageLoad', this.itemImgListener)
   }
 }
 </script>
