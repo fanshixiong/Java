@@ -144,7 +144,7 @@ export default {
     // 5、获取tabControl组件距离顶部的距离,所有的组件都有一个$el属性，用于拿到组件中的元素
     // 需要监听上半部分的图片加载完成
     swiperImgLoad () {
-      this.tabOffsetTop = this.$refs.tabcontrol2.$el.offsetTop
+      this.tabOffsetTop = 0 // this.$refs.tabcontrol2.$el.offsetTop
     },
 
     /**
