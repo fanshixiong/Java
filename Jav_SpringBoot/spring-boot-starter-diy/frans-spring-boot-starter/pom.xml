@@ -7,6 +7,7 @@
     <groupId>com.frans</groupId>
     <artifactId>frans-spring-boot-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <!-- 启动器 -->
     <dependencies>
         <!--  引入自动配置模块 -->
@@ -16,5 +17,8 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
+    <properties>
+        <!--编译编码-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 </project>
