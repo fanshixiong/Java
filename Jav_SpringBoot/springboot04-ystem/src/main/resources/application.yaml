@@ -1,0 +1,6 @@
+spring:
+  thymeleaf:
+    #缓冲的配置
+    cache: false
+  messages:
+    basename: i18n.login
