@@ -4,3 +4,6 @@ spring:
     cache: false
   messages:
     basename: i18n.login
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:mm:ss

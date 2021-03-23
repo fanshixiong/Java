@@ -25,4 +25,10 @@ public class LoginController {
             return "index";
         }
     }
+
+    @RequestMapping("/user/logout")
+    public String logout(HttpSession session){
+        session.removeAttribute("loginUser");
+        return "index";
+    }
 }
