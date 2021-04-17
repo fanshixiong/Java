@@ -21,6 +21,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         // 登录
         http.formLogin();
+
+        http.logout().logoutSuccessUrl("/");
     }
 
     @Override

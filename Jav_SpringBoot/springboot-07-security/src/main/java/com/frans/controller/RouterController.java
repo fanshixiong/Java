@@ -11,7 +11,7 @@ public class RouterController {
         return "index";
     }
 
-    @RequestMapping("/tologin")
+    @RequestMapping("/login")
     public String toLogin(){
         return "views/login";
     }
