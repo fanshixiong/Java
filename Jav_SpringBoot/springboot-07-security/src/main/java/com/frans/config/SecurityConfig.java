@@ -22,7 +22,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         // 登录
         http.formLogin();
 
+        http.csrf().disable();
         http.logout().logoutSuccessUrl("/");
+
+        http.rememberMe();
     }
 
     @Override
